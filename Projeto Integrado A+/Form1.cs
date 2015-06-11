@@ -510,8 +510,8 @@ namespace Projeto_Integrado_A_
 
                 case "R":
                     {
-                        string regras = "O apostador deve escolher entre 10 e 20 dezenas.\nAs dezenas devem corresponder a pelo menos cinco times diferentes.\nO preço do jogo para 10 dezenas é de R$ 5,00. Sobre este preço base incidem, CUMULATIVAMENTE, os seguintes valores:\nAdicional de R$ 0,75 para cada dezena escolhida além da 10ª até a 15ª.\nAdicional de R$ 3,00 para cada dezena além da 15ª até a 19ª.Adicional de mais 7,00 se o jogo tiver exatamente 20 dezenas.\nAcrescimo de R$1.25 para cada time escolhido além do quinto";
-                        MessageBox.Show(regras);
+                        var form = new Regras();
+                        form.ShowDialog();
                         break;
                     }
             }
