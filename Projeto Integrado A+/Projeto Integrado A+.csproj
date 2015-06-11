@@ -55,6 +55,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorteio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sorteio.Designer.cs">
+      <DependentUpon>Sorteio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sorteio2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sorteio2.Designer.cs">
+      <DependentUpon>Sorteio2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -68,6 +80,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sorteio.resx">
+      <DependentUpon>Sorteio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sorteio2.resx">
+      <DependentUpon>Sorteio2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
