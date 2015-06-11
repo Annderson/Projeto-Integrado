@@ -40,6 +40,7 @@ namespace Projeto_Integrado_A_
         {
             //Bloqueio para que usuário consiga digitar somente números.
 
+
             if (char.IsLetter(e.KeyChar) || e.KeyChar == ' ')
                 e.Handled = true;
             else if (char.IsSymbol(e.KeyChar))
@@ -58,107 +59,27 @@ namespace Projeto_Integrado_A_
 
 
             // Cria mascara para dar espaçamento adequado entre os números digitados.
-
-            switch (TXTent.TextLength)
+            if (TXTent.TextLength == 0)
+                TXTent.Text = "";
+            else
             {
-                case 0:
-                    TXTent.Text = "";
-                    break;
-
-                case 2:
+                int pl = TXTent.TextLength - 2;
+                if (pl % 3 == 0)
+                {
                     TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 4;
-                    break;
+                    TXTent.SelectionStart = pl + 4;
+                }
+            }
 
-                case 5:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 7;
-                    break;
-
-                case 8:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 10;
-                    break;
-
-                case 11:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 13;
-                    break;
-
-                case 14:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 16;
-                    break;
-
-                case 17:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 19;
-                    break;
-
-                case 20:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 22;
-                    break;
-
-                case 23:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 25;
-                    break;
-
-                case 26:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 28;
-                    break;
-
-                case 29:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 31;
-                    break;
-
-                case 32:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 34;
-                    break;
-
-                case 35:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 37;
-                    break;
-
-                case 38:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 40;
-                    break;
-
-                case 41:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 43;
-                    break;
-
-                case 44:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 46;
-                    break;
-
-                case 47:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 49;
-                    break;
-
-                case 50:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 52;
-                    break;
-
-                case 53:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 55;
-                    break;
-
-                case 56:
-                    TXTent.Text = TXTent.Text + " ";
-                    TXTent.SelectionStart = 58;
-                    break;
+            // Backspace
+            if (e.KeyChar == 8)
+            {
+                var newLength = TXTent.Text.Count() - 1;
+                if (newLength >= 0)
+                {
+                    TXTent.Text = TXTent.Text.Substring(0, newLength);
+                    TXTent.SelectionStart = newLength;
+                }
             }
         }
 
@@ -402,7 +323,8 @@ namespace Projeto_Integrado_A_
                         
                         //tap = times apostados
 
-                        protocolo = Convert.ToInt64(TXTconsult.Text);
+                        long.TryParse(TXTconsult.Text, out protocolo);
+                        protocolo = 0;
                         //qd = endPoint.obterQuantidadeDezenasApostadas(protocolo);
                         da = endPoint.obterTodasDezenasApostadas(protocolo); // Replace here!!!
                         if (da == null)
