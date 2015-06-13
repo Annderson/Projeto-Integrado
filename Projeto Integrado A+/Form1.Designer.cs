@@ -37,6 +37,7 @@
             this.TXTconsult = new System.Windows.Forms.TextBox();
             this.BUTcons = new System.Windows.Forms.Button();
             this.BUTregras = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBLnum
@@ -84,7 +85,7 @@
             this.BUTlimp.AccessibleDescription = "L";
             this.BUTlimp.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTlimp.ForeColor = System.Drawing.Color.Blue;
-            this.BUTlimp.Location = new System.Drawing.Point(282, 501);
+            this.BUTlimp.Location = new System.Drawing.Point(186, 501);
             this.BUTlimp.Name = "BUTlimp";
             this.BUTlimp.Size = new System.Drawing.Size(116, 24);
             this.BUTlimp.TabIndex = 9;
@@ -139,6 +140,16 @@
             this.BUTregras.UseVisualStyleBackColor = false;
             this.BUTregras.Click += new System.EventHandler(this.Processamento_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(333, 504);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Avançar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Projeto_Integrado_A_v2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +157,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(695, 537);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BUTregras);
             this.Controls.Add(this.BUTcons);
             this.Controls.Add(this.TXTconsult);
@@ -172,6 +184,7 @@
         private System.Windows.Forms.TextBox TXTconsult;
         private System.Windows.Forms.Button BUTcons;
         private System.Windows.Forms.Button BUTregras;
+        private System.Windows.Forms.Button button1;
     }
 }
 
