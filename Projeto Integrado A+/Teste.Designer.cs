@@ -1,6 +1,6 @@
 ﻿namespace Projeto_Integrado_A_
 {
-    partial class Sorteio2
+    partial class Teste
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.GRBsorteio = new System.Windows.Forms.GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Teste));
+            this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.protocolosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.B99 = new System.Windows.Forms.Button();
             this.B00 = new System.Windows.Forms.Button();
             this.B95 = new System.Windows.Forms.Button();
@@ -39,19 +41,21 @@
             this.B90 = new System.Windows.Forms.Button();
             this.B89 = new System.Windows.Forms.Button();
             this.B88 = new System.Windows.Forms.Button();
+            this.TXTsortiados = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.B81 = new System.Windows.Forms.Button();
             this.B86 = new System.Windows.Forms.Button();
-            this.B87 = new System.Windows.Forms.Button();
             this.B85 = new System.Windows.Forms.Button();
             this.B84 = new System.Windows.Forms.Button();
             this.B83 = new System.Windows.Forms.Button();
             this.B82 = new System.Windows.Forms.Button();
             this.B91 = new System.Windows.Forms.Button();
+            this.B87 = new System.Windows.Forms.Button();
+            this.BUTstop = new System.Windows.Forms.Button();
             this.B92 = new System.Windows.Forms.Button();
             this.B93 = new System.Windows.Forms.Button();
             this.B94 = new System.Windows.Forms.Button();
             this.B80 = new System.Windows.Forms.Button();
-            this.B72 = new System.Windows.Forms.Button();
             this.B73 = new System.Windows.Forms.Button();
             this.B74 = new System.Windows.Forms.Button();
             this.B75 = new System.Windows.Forms.Button();
@@ -60,6 +64,10 @@
             this.B78 = new System.Windows.Forms.Button();
             this.B79 = new System.Windows.Forms.Button();
             this.B67 = new System.Windows.Forms.Button();
+            this.BUTstar = new System.Windows.Forms.Button();
+            this.B72 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.B66 = new System.Windows.Forms.Button();
             this.B71 = new System.Windows.Forms.Button();
             this.B70 = new System.Windows.Forms.Button();
@@ -85,6 +93,7 @@
             this.B46 = new System.Windows.Forms.Button();
             this.B41 = new System.Windows.Forms.Button();
             this.B42 = new System.Windows.Forms.Button();
+            this.GRBsorteio = new System.Windows.Forms.GroupBox();
             this.B43 = new System.Windows.Forms.Button();
             this.B44 = new System.Windows.Forms.Button();
             this.B47 = new System.Windows.Forms.Button();
@@ -126,132 +135,57 @@
             this.B5 = new System.Windows.Forms.Button();
             this.B6 = new System.Windows.Forms.Button();
             this.B7 = new System.Windows.Forms.Button();
+            this.B9 = new System.Windows.Forms.Button();
             this.B8 = new System.Windows.Forms.Button();
             this.B10 = new System.Windows.Forms.Button();
             this.B1 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.protocolosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TXTsortiados = new System.Windows.Forms.TextBox();
-            this.BUTstar = new System.Windows.Forms.Button();
-            this.BUTstop = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.B9 = new System.Windows.Forms.Button();
-            this.GRBsorteio.SuspendLayout();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            this.GRBsorteio.SuspendLayout();
             this.SuspendLayout();
             // 
-            // GRBsorteio
+            // listaToolStripMenuItem
             // 
-            this.GRBsorteio.Controls.Add(this.B9);
-            this.GRBsorteio.Controls.Add(this.B99);
-            this.GRBsorteio.Controls.Add(this.B00);
-            this.GRBsorteio.Controls.Add(this.B95);
-            this.GRBsorteio.Controls.Add(this.B96);
-            this.GRBsorteio.Controls.Add(this.B97);
-            this.GRBsorteio.Controls.Add(this.B98);
-            this.GRBsorteio.Controls.Add(this.B90);
-            this.GRBsorteio.Controls.Add(this.B89);
-            this.GRBsorteio.Controls.Add(this.B88);
-            this.GRBsorteio.Controls.Add(this.B81);
-            this.GRBsorteio.Controls.Add(this.B86);
-            this.GRBsorteio.Controls.Add(this.B87);
-            this.GRBsorteio.Controls.Add(this.B85);
-            this.GRBsorteio.Controls.Add(this.B84);
-            this.GRBsorteio.Controls.Add(this.B83);
-            this.GRBsorteio.Controls.Add(this.B82);
-            this.GRBsorteio.Controls.Add(this.B91);
-            this.GRBsorteio.Controls.Add(this.B92);
-            this.GRBsorteio.Controls.Add(this.B93);
-            this.GRBsorteio.Controls.Add(this.B94);
-            this.GRBsorteio.Controls.Add(this.B80);
-            this.GRBsorteio.Controls.Add(this.B72);
-            this.GRBsorteio.Controls.Add(this.B73);
-            this.GRBsorteio.Controls.Add(this.B74);
-            this.GRBsorteio.Controls.Add(this.B75);
-            this.GRBsorteio.Controls.Add(this.B76);
-            this.GRBsorteio.Controls.Add(this.B77);
-            this.GRBsorteio.Controls.Add(this.B78);
-            this.GRBsorteio.Controls.Add(this.B79);
-            this.GRBsorteio.Controls.Add(this.B67);
-            this.GRBsorteio.Controls.Add(this.B66);
-            this.GRBsorteio.Controls.Add(this.B71);
-            this.GRBsorteio.Controls.Add(this.B70);
-            this.GRBsorteio.Controls.Add(this.B69);
-            this.GRBsorteio.Controls.Add(this.B68);
-            this.GRBsorteio.Controls.Add(this.B61);
-            this.GRBsorteio.Controls.Add(this.B62);
-            this.GRBsorteio.Controls.Add(this.B63);
-            this.GRBsorteio.Controls.Add(this.B64);
-            this.GRBsorteio.Controls.Add(this.B65);
-            this.GRBsorteio.Controls.Add(this.B58);
-            this.GRBsorteio.Controls.Add(this.B59);
-            this.GRBsorteio.Controls.Add(this.B60);
-            this.GRBsorteio.Controls.Add(this.B51);
-            this.GRBsorteio.Controls.Add(this.B52);
-            this.GRBsorteio.Controls.Add(this.B53);
-            this.GRBsorteio.Controls.Add(this.B54);
-            this.GRBsorteio.Controls.Add(this.B55);
-            this.GRBsorteio.Controls.Add(this.B56);
-            this.GRBsorteio.Controls.Add(this.B57);
-            this.GRBsorteio.Controls.Add(this.B49);
-            this.GRBsorteio.Controls.Add(this.B48);
-            this.GRBsorteio.Controls.Add(this.B46);
-            this.GRBsorteio.Controls.Add(this.B41);
-            this.GRBsorteio.Controls.Add(this.B42);
-            this.GRBsorteio.Controls.Add(this.B43);
-            this.GRBsorteio.Controls.Add(this.B44);
-            this.GRBsorteio.Controls.Add(this.B47);
-            this.GRBsorteio.Controls.Add(this.B45);
-            this.GRBsorteio.Controls.Add(this.B40);
-            this.GRBsorteio.Controls.Add(this.B31);
-            this.GRBsorteio.Controls.Add(this.B32);
-            this.GRBsorteio.Controls.Add(this.B33);
-            this.GRBsorteio.Controls.Add(this.B34);
-            this.GRBsorteio.Controls.Add(this.B35);
-            this.GRBsorteio.Controls.Add(this.B37);
-            this.GRBsorteio.Controls.Add(this.B38);
-            this.GRBsorteio.Controls.Add(this.B39);
-            this.GRBsorteio.Controls.Add(this.B50);
-            this.GRBsorteio.Controls.Add(this.B36);
-            this.GRBsorteio.Controls.Add(this.B21);
-            this.GRBsorteio.Controls.Add(this.B22);
-            this.GRBsorteio.Controls.Add(this.B23);
-            this.GRBsorteio.Controls.Add(this.B24);
-            this.GRBsorteio.Controls.Add(this.B25);
-            this.GRBsorteio.Controls.Add(this.B27);
-            this.GRBsorteio.Controls.Add(this.B26);
-            this.GRBsorteio.Controls.Add(this.B28);
-            this.GRBsorteio.Controls.Add(this.B29);
-            this.GRBsorteio.Controls.Add(this.B30);
-            this.GRBsorteio.Controls.Add(this.B13);
-            this.GRBsorteio.Controls.Add(this.B14);
-            this.GRBsorteio.Controls.Add(this.B15);
-            this.GRBsorteio.Controls.Add(this.B16);
-            this.GRBsorteio.Controls.Add(this.B17);
-            this.GRBsorteio.Controls.Add(this.B18);
-            this.GRBsorteio.Controls.Add(this.B19);
-            this.GRBsorteio.Controls.Add(this.B20);
-            this.GRBsorteio.Controls.Add(this.B12);
-            this.GRBsorteio.Controls.Add(this.B11);
-            this.GRBsorteio.Controls.Add(this.B2);
-            this.GRBsorteio.Controls.Add(this.B3);
-            this.GRBsorteio.Controls.Add(this.B4);
-            this.GRBsorteio.Controls.Add(this.B5);
-            this.GRBsorteio.Controls.Add(this.B6);
-            this.GRBsorteio.Controls.Add(this.B7);
-            this.GRBsorteio.Controls.Add(this.B8);
-            this.GRBsorteio.Controls.Add(this.B10);
-            this.GRBsorteio.Controls.Add(this.B1);
-            this.GRBsorteio.Location = new System.Drawing.Point(28, 40);
-            this.GRBsorteio.Name = "GRBsorteio";
-            this.GRBsorteio.Size = new System.Drawing.Size(490, 306);
-            this.GRBsorteio.TabIndex = 3;
-            this.GRBsorteio.TabStop = false;
-            this.GRBsorteio.Text = "Quadro de Sorteio";
+            this.listaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.protocolosToolStripMenuItem});
+            this.listaToolStripMenuItem.Name = "listaToolStripMenuItem";
+            this.listaToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.listaToolStripMenuItem.Text = "Lista";
+            // 
+            // protocolosToolStripMenuItem
+            // 
+            this.protocolosToolStripMenuItem.Name = "protocolosToolStripMenuItem";
+            this.protocolosToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.protocolosToolStripMenuItem.Text = "Protocolos";
             // 
             // B99
             // 
@@ -334,6 +268,23 @@
             this.B88.Text = "88";
             this.B88.UseVisualStyleBackColor = true;
             // 
+            // TXTsortiados
+            // 
+            this.TXTsortiados.Location = new System.Drawing.Point(125, 353);
+            this.TXTsortiados.Multiline = true;
+            this.TXTsortiados.Name = "TXTsortiados";
+            this.TXTsortiados.Size = new System.Drawing.Size(393, 36);
+            this.TXTsortiados.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 360);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Numeros sortiados:";
+            // 
             // B81
             // 
             this.B81.Location = new System.Drawing.Point(16, 243);
@@ -351,15 +302,6 @@
             this.B86.TabIndex = 132;
             this.B86.Text = "86";
             this.B86.UseVisualStyleBackColor = true;
-            // 
-            // B87
-            // 
-            this.B87.Location = new System.Drawing.Point(300, 243);
-            this.B87.Name = "B87";
-            this.B87.Size = new System.Drawing.Size(28, 22);
-            this.B87.TabIndex = 131;
-            this.B87.Text = "87";
-            this.B87.UseVisualStyleBackColor = true;
             // 
             // B85
             // 
@@ -406,6 +348,24 @@
             this.B91.Text = "91";
             this.B91.UseVisualStyleBackColor = true;
             // 
+            // B87
+            // 
+            this.B87.Location = new System.Drawing.Point(300, 243);
+            this.B87.Name = "B87";
+            this.B87.Size = new System.Drawing.Size(28, 22);
+            this.B87.TabIndex = 131;
+            this.B87.Text = "87";
+            this.B87.UseVisualStyleBackColor = true;
+            // 
+            // BUTstop
+            // 
+            this.BUTstop.Location = new System.Drawing.Point(113, 395);
+            this.BUTstop.Name = "BUTstop";
+            this.BUTstop.Size = new System.Drawing.Size(65, 23);
+            this.BUTstop.TabIndex = 15;
+            this.BUTstop.Text = "Stop";
+            this.BUTstop.UseVisualStyleBackColor = true;
+            // 
             // B92
             // 
             this.B92.Location = new System.Drawing.Point(63, 271);
@@ -441,15 +401,6 @@
             this.B80.TabIndex = 122;
             this.B80.Text = "80";
             this.B80.UseVisualStyleBackColor = true;
-            // 
-            // B72
-            // 
-            this.B72.Location = new System.Drawing.Point(63, 215);
-            this.B72.Name = "B72";
-            this.B72.Size = new System.Drawing.Size(28, 22);
-            this.B72.TabIndex = 121;
-            this.B72.Text = "72";
-            this.B72.UseVisualStyleBackColor = true;
             // 
             // B73
             // 
@@ -522,6 +473,44 @@
             this.B67.TabIndex = 113;
             this.B67.Text = "67";
             this.B67.UseVisualStyleBackColor = true;
+            // 
+            // BUTstar
+            // 
+            this.BUTstar.Location = new System.Drawing.Point(28, 395);
+            this.BUTstar.Name = "BUTstar";
+            this.BUTstar.Size = new System.Drawing.Size(64, 23);
+            this.BUTstar.TabIndex = 14;
+            this.BUTstar.Text = "Start";
+            this.BUTstar.UseVisualStyleBackColor = true;
+            // 
+            // B72
+            // 
+            this.B72.Location = new System.Drawing.Point(63, 215);
+            this.B72.Name = "B72";
+            this.B72.Size = new System.Drawing.Size(28, 22);
+            this.B72.TabIndex = 121;
+            this.B72.Text = "72";
+            this.B72.UseVisualStyleBackColor = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.listaToolStripMenuItem,
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(579, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
             // 
             // B66
             // 
@@ -747,6 +736,115 @@
             this.B42.TabIndex = 88;
             this.B42.Text = "42";
             this.B42.UseVisualStyleBackColor = true;
+            // 
+            // GRBsorteio
+            // 
+            this.GRBsorteio.Controls.Add(this.B99);
+            this.GRBsorteio.Controls.Add(this.B00);
+            this.GRBsorteio.Controls.Add(this.B95);
+            this.GRBsorteio.Controls.Add(this.B96);
+            this.GRBsorteio.Controls.Add(this.B97);
+            this.GRBsorteio.Controls.Add(this.B98);
+            this.GRBsorteio.Controls.Add(this.B90);
+            this.GRBsorteio.Controls.Add(this.B89);
+            this.GRBsorteio.Controls.Add(this.B88);
+            this.GRBsorteio.Controls.Add(this.B81);
+            this.GRBsorteio.Controls.Add(this.B86);
+            this.GRBsorteio.Controls.Add(this.B87);
+            this.GRBsorteio.Controls.Add(this.B85);
+            this.GRBsorteio.Controls.Add(this.B84);
+            this.GRBsorteio.Controls.Add(this.B83);
+            this.GRBsorteio.Controls.Add(this.B82);
+            this.GRBsorteio.Controls.Add(this.B91);
+            this.GRBsorteio.Controls.Add(this.B92);
+            this.GRBsorteio.Controls.Add(this.B93);
+            this.GRBsorteio.Controls.Add(this.B94);
+            this.GRBsorteio.Controls.Add(this.B80);
+            this.GRBsorteio.Controls.Add(this.B72);
+            this.GRBsorteio.Controls.Add(this.B73);
+            this.GRBsorteio.Controls.Add(this.B74);
+            this.GRBsorteio.Controls.Add(this.B75);
+            this.GRBsorteio.Controls.Add(this.B76);
+            this.GRBsorteio.Controls.Add(this.B77);
+            this.GRBsorteio.Controls.Add(this.B78);
+            this.GRBsorteio.Controls.Add(this.B79);
+            this.GRBsorteio.Controls.Add(this.B67);
+            this.GRBsorteio.Controls.Add(this.B66);
+            this.GRBsorteio.Controls.Add(this.B71);
+            this.GRBsorteio.Controls.Add(this.B70);
+            this.GRBsorteio.Controls.Add(this.B69);
+            this.GRBsorteio.Controls.Add(this.B68);
+            this.GRBsorteio.Controls.Add(this.B61);
+            this.GRBsorteio.Controls.Add(this.B62);
+            this.GRBsorteio.Controls.Add(this.B63);
+            this.GRBsorteio.Controls.Add(this.B64);
+            this.GRBsorteio.Controls.Add(this.B65);
+            this.GRBsorteio.Controls.Add(this.B58);
+            this.GRBsorteio.Controls.Add(this.B59);
+            this.GRBsorteio.Controls.Add(this.B60);
+            this.GRBsorteio.Controls.Add(this.B51);
+            this.GRBsorteio.Controls.Add(this.B52);
+            this.GRBsorteio.Controls.Add(this.B53);
+            this.GRBsorteio.Controls.Add(this.B54);
+            this.GRBsorteio.Controls.Add(this.B55);
+            this.GRBsorteio.Controls.Add(this.B56);
+            this.GRBsorteio.Controls.Add(this.B57);
+            this.GRBsorteio.Controls.Add(this.B49);
+            this.GRBsorteio.Controls.Add(this.B48);
+            this.GRBsorteio.Controls.Add(this.B46);
+            this.GRBsorteio.Controls.Add(this.B41);
+            this.GRBsorteio.Controls.Add(this.B42);
+            this.GRBsorteio.Controls.Add(this.B43);
+            this.GRBsorteio.Controls.Add(this.B44);
+            this.GRBsorteio.Controls.Add(this.B47);
+            this.GRBsorteio.Controls.Add(this.B45);
+            this.GRBsorteio.Controls.Add(this.B40);
+            this.GRBsorteio.Controls.Add(this.B31);
+            this.GRBsorteio.Controls.Add(this.B32);
+            this.GRBsorteio.Controls.Add(this.B33);
+            this.GRBsorteio.Controls.Add(this.B34);
+            this.GRBsorteio.Controls.Add(this.B35);
+            this.GRBsorteio.Controls.Add(this.B37);
+            this.GRBsorteio.Controls.Add(this.B38);
+            this.GRBsorteio.Controls.Add(this.B39);
+            this.GRBsorteio.Controls.Add(this.B50);
+            this.GRBsorteio.Controls.Add(this.B36);
+            this.GRBsorteio.Controls.Add(this.B21);
+            this.GRBsorteio.Controls.Add(this.B22);
+            this.GRBsorteio.Controls.Add(this.B23);
+            this.GRBsorteio.Controls.Add(this.B24);
+            this.GRBsorteio.Controls.Add(this.B25);
+            this.GRBsorteio.Controls.Add(this.B27);
+            this.GRBsorteio.Controls.Add(this.B26);
+            this.GRBsorteio.Controls.Add(this.B28);
+            this.GRBsorteio.Controls.Add(this.B29);
+            this.GRBsorteio.Controls.Add(this.B30);
+            this.GRBsorteio.Controls.Add(this.B13);
+            this.GRBsorteio.Controls.Add(this.B14);
+            this.GRBsorteio.Controls.Add(this.B15);
+            this.GRBsorteio.Controls.Add(this.B16);
+            this.GRBsorteio.Controls.Add(this.B17);
+            this.GRBsorteio.Controls.Add(this.B18);
+            this.GRBsorteio.Controls.Add(this.B19);
+            this.GRBsorteio.Controls.Add(this.B20);
+            this.GRBsorteio.Controls.Add(this.B12);
+            this.GRBsorteio.Controls.Add(this.B11);
+            this.GRBsorteio.Controls.Add(this.B2);
+            this.GRBsorteio.Controls.Add(this.B3);
+            this.GRBsorteio.Controls.Add(this.B4);
+            this.GRBsorteio.Controls.Add(this.B5);
+            this.GRBsorteio.Controls.Add(this.B6);
+            this.GRBsorteio.Controls.Add(this.B7);
+            this.GRBsorteio.Controls.Add(this.B9);
+            this.GRBsorteio.Controls.Add(this.B8);
+            this.GRBsorteio.Controls.Add(this.B10);
+            this.GRBsorteio.Controls.Add(this.B1);
+            this.GRBsorteio.Location = new System.Drawing.Point(28, 41);
+            this.GRBsorteio.Name = "GRBsorteio";
+            this.GRBsorteio.Size = new System.Drawing.Size(490, 306);
+            this.GRBsorteio.TabIndex = 10;
+            this.GRBsorteio.TabStop = false;
+            this.GRBsorteio.Text = "Quadro de Sorteio";
             // 
             // B43
             // 
@@ -1072,10 +1170,10 @@
             this.B2.TabIndex = 52;
             this.B2.Text = "2";
             this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.timer1_Tick);
             // 
             // B3
             // 
-            this.B3.AccessibleName = "3";
             this.B3.Location = new System.Drawing.Point(109, 19);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(28, 22);
@@ -1085,7 +1183,6 @@
             // 
             // B4
             // 
-            this.B4.AccessibleName = "4";
             this.B4.Location = new System.Drawing.Point(155, 19);
             this.B4.Name = "B4";
             this.B4.Size = new System.Drawing.Size(28, 22);
@@ -1095,7 +1192,6 @@
             // 
             // B5
             // 
-            this.B5.AccessibleName = "5";
             this.B5.Location = new System.Drawing.Point(203, 19);
             this.B5.Name = "B5";
             this.B5.Size = new System.Drawing.Size(28, 22);
@@ -1105,7 +1201,6 @@
             // 
             // B6
             // 
-            this.B6.AccessibleName = "6";
             this.B6.Location = new System.Drawing.Point(253, 19);
             this.B6.Name = "B6";
             this.B6.Size = new System.Drawing.Size(28, 22);
@@ -1115,7 +1210,6 @@
             // 
             // B7
             // 
-            this.B7.AccessibleName = "7";
             this.B7.Location = new System.Drawing.Point(300, 19);
             this.B7.Name = "B7";
             this.B7.Size = new System.Drawing.Size(28, 22);
@@ -1123,9 +1217,17 @@
             this.B7.Text = "7";
             this.B7.UseVisualStyleBackColor = true;
             // 
+            // B9
+            // 
+            this.B9.Location = new System.Drawing.Point(394, 19);
+            this.B9.Name = "B9";
+            this.B9.Size = new System.Drawing.Size(28, 22);
+            this.B9.TabIndex = 46;
+            this.B9.Text = "9";
+            this.B9.UseVisualStyleBackColor = true;
+            // 
             // B8
             // 
-            this.B8.AccessibleName = "8";
             this.B8.Location = new System.Drawing.Point(345, 19);
             this.B8.Name = "B8";
             this.B8.Size = new System.Drawing.Size(28, 22);
@@ -1135,7 +1237,6 @@
             // 
             // B10
             // 
-            this.B10.AccessibleName = "10";
             this.B10.Location = new System.Drawing.Point(442, 19);
             this.B10.Name = "B10";
             this.B10.Size = new System.Drawing.Size(28, 22);
@@ -1145,116 +1246,258 @@
             // 
             // B1
             // 
-            this.B1.AccessibleName = "1";
             this.B1.Location = new System.Drawing.Point(16, 19);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(28, 22);
             this.B1.TabIndex = 43;
             this.B1.Text = "1";
             this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.timer1_Tick);
             // 
-            // menuStrip1
+            // timer1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.listaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(552, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // toolStripMenuItem1
+            // fileToolStripMenuItem
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.openToolStripMenuItem,
+            this.toolStripSeparator,
+            this.saveToolStripMenuItem,
+            this.saveAsToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.printToolStripMenuItem,
+            this.printPreviewToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
             // 
-            // listaToolStripMenuItem
+            // newToolStripMenuItem
             // 
-            this.listaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.protocolosToolStripMenuItem});
-            this.listaToolStripMenuItem.Name = "listaToolStripMenuItem";
-            this.listaToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.listaToolStripMenuItem.Text = "Lista";
+            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
+            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.newToolStripMenuItem.Text = "&New";
             // 
-            // protocolosToolStripMenuItem
+            // openToolStripMenuItem
             // 
-            this.protocolosToolStripMenuItem.Name = "protocolosToolStripMenuItem";
-            this.protocolosToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.protocolosToolStripMenuItem.Text = "Protocolos";
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.openToolStripMenuItem.Text = "&Open";
             // 
-            // label1
+            // toolStripSeparator
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 359);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Numeros sortiados:";
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 6);
             // 
-            // TXTsortiados
+            // saveToolStripMenuItem
             // 
-            this.TXTsortiados.Location = new System.Drawing.Point(125, 352);
-            this.TXTsortiados.Multiline = true;
-            this.TXTsortiados.Name = "TXTsortiados";
-            this.TXTsortiados.Size = new System.Drawing.Size(393, 36);
-            this.TXTsortiados.TabIndex = 6;
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.saveToolStripMenuItem.Text = "&Save";
             // 
-            // BUTstar
+            // saveAsToolStripMenuItem
             // 
-            this.BUTstar.Location = new System.Drawing.Point(28, 406);
-            this.BUTstar.Name = "BUTstar";
-            this.BUTstar.Size = new System.Drawing.Size(64, 23);
-            this.BUTstar.TabIndex = 7;
-            this.BUTstar.Text = "Start";
-            this.BUTstar.UseVisualStyleBackColor = true;
-            this.BUTstar.Click += new System.EventHandler(this.BUTstar_Click);
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
-            // BUTstop
+            // toolStripSeparator1
             // 
-            this.BUTstop.Location = new System.Drawing.Point(114, 406);
-            this.BUTstop.Name = "BUTstop";
-            this.BUTstop.Size = new System.Drawing.Size(65, 23);
-            this.BUTstop.TabIndex = 8;
-            this.BUTstop.Text = "Stop";
-            this.BUTstop.UseVisualStyleBackColor = true;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
-            // label2
+            // printToolStripMenuItem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(231, 406);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
-            this.label2.TabIndex = 9;
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.printToolStripMenuItem.Text = "&Print";
             // 
-            // B9
+            // printPreviewToolStripMenuItem
             // 
-            this.B9.AccessibleName = "9";
-            this.B9.Location = new System.Drawing.Point(394, 19);
-            this.B9.Name = "B9";
-            this.B9.Size = new System.Drawing.Size(28, 22);
-            this.B9.TabIndex = 144;
-            this.B9.Text = "9";
-            this.B9.UseVisualStyleBackColor = true;
+            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
+            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
             // 
-            // Sorteio2
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem,
+            this.redoToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.cutToolStripMenuItem,
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.selectAllToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "&Edit";
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.undoToolStripMenuItem.Text = "&Undo";
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.redoToolStripMenuItem.Text = "&Redo";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 6);
+            // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
+            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.cutToolStripMenuItem.Text = "Cu&t";
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
+            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.copyToolStripMenuItem.Text = "&Copy";
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
+            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.pasteToolStripMenuItem.Text = "&Paste";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 6);
+            // 
+            // selectAllToolStripMenuItem
+            // 
+            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.selectAllToolStripMenuItem.Text = "Select &All";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.customizeToolStripMenuItem,
+            this.optionsToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.toolsToolStripMenuItem.Text = "&Tools";
+            // 
+            // customizeToolStripMenuItem
+            // 
+            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.customizeToolStripMenuItem.Text = "&Customize";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.optionsToolStripMenuItem.Text = "&Options";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contentsToolStripMenuItem,
+            this.indexToolStripMenuItem,
+            this.searchToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // contentsToolStripMenuItem
+            // 
+            this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
+            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.contentsToolStripMenuItem.Text = "&Contents";
+            // 
+            // indexToolStripMenuItem
+            // 
+            this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.indexToolStripMenuItem.Text = "&Index";
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.searchToolStripMenuItem.Text = "&Search";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            this.aboutToolStripMenuItem.Text = "&About...";
+            // 
+            // Sorteio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 451);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.BUTstop);
-            this.Controls.Add(this.BUTstar);
+            this.ClientSize = new System.Drawing.Size(579, 431);
             this.Controls.Add(this.TXTsortiados);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.GRBsorteio);
+            this.Controls.Add(this.BUTstop);
+            this.Controls.Add(this.BUTstar);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Sorteio2";
-            this.Text = "Tabela de sorteio:";
-            this.GRBsorteio.ResumeLayout(false);
+            this.Controls.Add(this.GRBsorteio);
+            this.Name = "Sorteio";
+            this.Text = "Tabela de sorteio";
+            this.Load += new System.EventHandler(this.Sorteio_Load);
+            this.Click += new System.EventHandler(this.timer1_Tick);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.GRBsorteio.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1262,116 +1505,146 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox GRBsorteio;
-        private System.Windows.Forms.Button B00;
-        private System.Windows.Forms.Button B95;
-        private System.Windows.Forms.Button B96;
-        private System.Windows.Forms.Button B97;
-        private System.Windows.Forms.Button B98;
-        private System.Windows.Forms.Button B90;
-        private System.Windows.Forms.Button B89;
-        private System.Windows.Forms.Button B88;
-        private System.Windows.Forms.Button B81;
-        private System.Windows.Forms.Button B86;
-        private System.Windows.Forms.Button B87;
-        private System.Windows.Forms.Button B85;
-        private System.Windows.Forms.Button B84;
-        private System.Windows.Forms.Button B83;
-        private System.Windows.Forms.Button B82;
-        private System.Windows.Forms.Button B91;
-        private System.Windows.Forms.Button B92;
-        private System.Windows.Forms.Button B93;
-        private System.Windows.Forms.Button B94;
-        private System.Windows.Forms.Button B80;
-        private System.Windows.Forms.Button B72;
-        private System.Windows.Forms.Button B73;
-        private System.Windows.Forms.Button B74;
-        private System.Windows.Forms.Button B75;
-        private System.Windows.Forms.Button B76;
-        private System.Windows.Forms.Button B77;
-        private System.Windows.Forms.Button B78;
-        private System.Windows.Forms.Button B79;
-        private System.Windows.Forms.Button B67;
-        private System.Windows.Forms.Button B66;
-        private System.Windows.Forms.Button B71;
-        private System.Windows.Forms.Button B70;
-        private System.Windows.Forms.Button B69;
-        private System.Windows.Forms.Button B68;
-        private System.Windows.Forms.Button B61;
-        private System.Windows.Forms.Button B62;
-        private System.Windows.Forms.Button B63;
-        private System.Windows.Forms.Button B64;
-        private System.Windows.Forms.Button B65;
-        private System.Windows.Forms.Button B58;
-        private System.Windows.Forms.Button B59;
-        private System.Windows.Forms.Button B60;
-        private System.Windows.Forms.Button B51;
-        private System.Windows.Forms.Button B52;
-        private System.Windows.Forms.Button B53;
-        private System.Windows.Forms.Button B54;
-        private System.Windows.Forms.Button B55;
-        private System.Windows.Forms.Button B56;
-        private System.Windows.Forms.Button B57;
-        private System.Windows.Forms.Button B49;
-        private System.Windows.Forms.Button B48;
-        private System.Windows.Forms.Button B46;
-        private System.Windows.Forms.Button B41;
-        private System.Windows.Forms.Button B42;
-        private System.Windows.Forms.Button B43;
-        private System.Windows.Forms.Button B44;
-        private System.Windows.Forms.Button B47;
-        private System.Windows.Forms.Button B45;
-        private System.Windows.Forms.Button B40;
-        private System.Windows.Forms.Button B31;
-        private System.Windows.Forms.Button B32;
-        private System.Windows.Forms.Button B33;
-        private System.Windows.Forms.Button B34;
-        private System.Windows.Forms.Button B35;
-        private System.Windows.Forms.Button B37;
-        private System.Windows.Forms.Button B38;
-        private System.Windows.Forms.Button B39;
-        private System.Windows.Forms.Button B50;
-        private System.Windows.Forms.Button B36;
-        private System.Windows.Forms.Button B21;
-        private System.Windows.Forms.Button B22;
-        private System.Windows.Forms.Button B23;
-        private System.Windows.Forms.Button B24;
-        private System.Windows.Forms.Button B25;
-        private System.Windows.Forms.Button B27;
-        private System.Windows.Forms.Button B26;
-        private System.Windows.Forms.Button B28;
-        private System.Windows.Forms.Button B29;
-        private System.Windows.Forms.Button B30;
-        private System.Windows.Forms.Button B13;
-        private System.Windows.Forms.Button B14;
-        private System.Windows.Forms.Button B15;
-        private System.Windows.Forms.Button B16;
-        private System.Windows.Forms.Button B17;
-        private System.Windows.Forms.Button B18;
-        private System.Windows.Forms.Button B19;
-        private System.Windows.Forms.Button B20;
-        private System.Windows.Forms.Button B12;
-        private System.Windows.Forms.Button B11;
-        private System.Windows.Forms.Button B2;
-        private System.Windows.Forms.Button B3;
-        private System.Windows.Forms.Button B4;
-        private System.Windows.Forms.Button B5;
-        private System.Windows.Forms.Button B6;
-        private System.Windows.Forms.Button B7;
-        private System.Windows.Forms.Button B8;
-        private System.Windows.Forms.Button B10;
-        private System.Windows.Forms.Button B1;
-        private System.Windows.Forms.Button B99;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem listaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem protocolosToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TXTsortiados;
-        private System.Windows.Forms.Button BUTstar;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BUTstop;
+        private System.Windows.Forms.Button BUTstar;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.GroupBox GRBsorteio;
+        public System.Windows.Forms.ToolStripMenuItem protocolosToolStripMenuItem;
+        public System.Windows.Forms.Button B99;
+        public System.Windows.Forms.Button B00;
+        public System.Windows.Forms.Button B95;
+        public System.Windows.Forms.Button B96;
+        public System.Windows.Forms.Button B97;
+        public System.Windows.Forms.Button B98;
+        public System.Windows.Forms.Button B90;
+        public System.Windows.Forms.Button B89;
+        public System.Windows.Forms.Button B88;
+        public System.Windows.Forms.Button B81;
+        public System.Windows.Forms.Button B86;
+        public System.Windows.Forms.Button B85;
+        public System.Windows.Forms.Button B84;
+        public System.Windows.Forms.Button B83;
+        public System.Windows.Forms.Button B82;
+        public System.Windows.Forms.Button B91;
+        public System.Windows.Forms.Button B87;
+        public System.Windows.Forms.Button B92;
+        public System.Windows.Forms.Button B93;
+        public System.Windows.Forms.Button B94;
+        public System.Windows.Forms.Button B80;
+        public System.Windows.Forms.Button B73;
+        public System.Windows.Forms.Button B74;
+        public System.Windows.Forms.Button B75;
+        public System.Windows.Forms.Button B76;
+        public System.Windows.Forms.Button B77;
+        public System.Windows.Forms.Button B78;
+        public System.Windows.Forms.Button B79;
+        public System.Windows.Forms.Button B67;
+        public System.Windows.Forms.Button B72;
+        public System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.Button B66;
+        public System.Windows.Forms.Button B71;
+        public System.Windows.Forms.Button B70;
+        public System.Windows.Forms.Button B69;
+        public System.Windows.Forms.Button B68;
+        public System.Windows.Forms.Button B61;
+        public System.Windows.Forms.Button B62;
+        public System.Windows.Forms.Button B63;
+        public System.Windows.Forms.Button B64;
+        public System.Windows.Forms.Button B65;
+        public System.Windows.Forms.Button B58;
+        public System.Windows.Forms.Button B59;
+        public System.Windows.Forms.Button B60;
+        public System.Windows.Forms.Button B51;
+        public System.Windows.Forms.Button B52;
+        public System.Windows.Forms.Button B53;
+        public System.Windows.Forms.Button B54;
+        public System.Windows.Forms.Button B55;
+        public System.Windows.Forms.Button B56;
+        public System.Windows.Forms.Button B57;
+        public System.Windows.Forms.Button B49;
+        public System.Windows.Forms.Button B48;
+        public System.Windows.Forms.Button B46;
+        public System.Windows.Forms.Button B41;
+        public System.Windows.Forms.Button B42;
+        public System.Windows.Forms.Button B43;
+        public System.Windows.Forms.Button B44;
+        public System.Windows.Forms.Button B47;
+        public System.Windows.Forms.Button B45;
+        public System.Windows.Forms.Button B40;
+        public System.Windows.Forms.Button B31;
+        public System.Windows.Forms.Button B32;
+        public System.Windows.Forms.Button B33;
+        public System.Windows.Forms.Button B34;
+        public System.Windows.Forms.Button B35;
+        public System.Windows.Forms.Button B37;
+        public System.Windows.Forms.Button B38;
+        public System.Windows.Forms.Button B39;
+        public System.Windows.Forms.Button B50;
+        public System.Windows.Forms.Button B36;
+        public System.Windows.Forms.Button B21;
+        public System.Windows.Forms.Button B22;
+        public System.Windows.Forms.Button B23;
+        public System.Windows.Forms.Button B24;
+        public System.Windows.Forms.Button B25;
+        public System.Windows.Forms.Button B27;
+        public System.Windows.Forms.Button B26;
+        public System.Windows.Forms.Button B28;
+        public System.Windows.Forms.Button B29;
+        public System.Windows.Forms.Button B30;
+        public System.Windows.Forms.Button B13;
+        public System.Windows.Forms.Button B14;
+        public System.Windows.Forms.Button B15;
+        public System.Windows.Forms.Button B16;
+        public System.Windows.Forms.Button B17;
+        public System.Windows.Forms.Button B18;
+        public System.Windows.Forms.Button B19;
+        public System.Windows.Forms.Button B20;
+        public System.Windows.Forms.Button B12;
+        public System.Windows.Forms.Button B11;
+        public System.Windows.Forms.Button B2;
+        public System.Windows.Forms.Button B3;
+        public System.Windows.Forms.Button B4;
+        public System.Windows.Forms.Button B5;
+        public System.Windows.Forms.Button B6;
+        public System.Windows.Forms.Button B7;
+        public System.Windows.Forms.Button B9;
+        public System.Windows.Forms.Button B8;
+        public System.Windows.Forms.Button B10;
+        public System.Windows.Forms.Button B1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem printPreviewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem indexToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button B9;
+
+
     }
 }

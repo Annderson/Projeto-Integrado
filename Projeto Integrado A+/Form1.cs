@@ -522,5 +522,11 @@ namespace Projeto_Integrado_A_
             Form Sorteio2 = new Projeto_Integrado_A_.Sorteio2();
             Sorteio2.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form Sorteio = new Projeto_Integrado_A_.Teste();
+            Sorteio.ShowDialog();
+        }
     }
 }

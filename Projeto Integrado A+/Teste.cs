@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Projeto_Integrado_A_
 {
-    public partial class Sorteio : Form
+    public partial class Teste : Form
     {
-        public Sorteio()
+        public Teste()
         {
             InitializeComponent();
         }
 
-        private void radioButton89_CheckedChanged(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Sorteio_Load(object sender, EventArgs e)
         {
 
         }

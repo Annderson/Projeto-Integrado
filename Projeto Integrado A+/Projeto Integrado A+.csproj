@@ -61,11 +61,11 @@
     <Compile Include="Regras.Designer.cs">
       <DependentUpon>Regras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sorteio.cs">
+    <Compile Include="Teste.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sorteio.Designer.cs">
-      <DependentUpon>Sorteio.cs</DependentUpon>
+    <Compile Include="Teste.Designer.cs">
+      <DependentUpon>Teste.cs</DependentUpon>
     </Compile>
     <Compile Include="Sorteio2.cs">
       <SubType>Form</SubType>
@@ -89,8 +89,8 @@
     <EmbeddedResource Include="Regras.resx">
       <DependentUpon>Regras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sorteio.resx">
-      <DependentUpon>Sorteio.cs</DependentUpon>
+    <EmbeddedResource Include="Teste.resx">
+      <DependentUpon>Teste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sorteio2.resx">
       <DependentUpon>Sorteio2.cs</DependentUpon>
