@@ -16,7 +16,8 @@ namespace Projeto_Integrado_A_
         {
             InitializeComponent();
         }
-        
+       
+
         private void BUTstar_Click(object sender, EventArgs e)
         {
             int contador = 0;
@@ -25,57 +26,28 @@ namespace Projeto_Integrado_A_
 
             while (contador < 10)
             {
-                int N = rand.Next(00, 99);
-                TXTsortiados.Text = TXTsortiados.Text + "  " + N;
+                int S = rand.Next(00, 99);
+
+                foreach (var butoes in this.Controls.OfType<Button>())
+                {
+                    if (butoes.Text == Convert.ToString(S))
+                    {
+                        butoes.BackColor = Color.Red;
+                    }
+                }
+                TXTsortiados.Text = TXTsortiados.Text + " - " + S;
                 
-                if (B1.AccessibleName == Convert.ToString(N))
-                {
-                    B1.Enabled = false;
-                }
-                if (B2.AccessibleName == Convert.ToString(N))
-                {
-                    B2.Enabled = false;
-                }
-                if (B3.AccessibleName == Convert.ToString(N))
-                {
-                    B3.Enabled = false;
-                }
-                if (B4.AccessibleName == Convert.ToString(N))
-                {
-                    B4.Enabled = false;
-                }
-                if (B5.AccessibleName == Convert.ToString(N))
-                {
-                    B5.Enabled = false;
-                }
-                if (B6.AccessibleName == Convert.ToString(N))
-                {
-                    B6.Enabled = false;
-                }
-                if (B7.AccessibleName == Convert.ToString(N))
-                {
-                    B7.Enabled = false;
-                }
-                if (B8.AccessibleName == Convert.ToString(N))
-                {
-                    B8.Enabled = false;
-                }
-                if (B9.AccessibleName == Convert.ToString(N))
-                {
-                    B9.Enabled = false;
-                }
-                if (B10.AccessibleName == Convert.ToString(N))
-                {
-                    B10.Enabled = false;
-                }
+                
                 contador++;
             }
 
         }
 
-        private void B9_Click(object sender, EventArgs e)
-        {
 
+        private void Sorteio2_Load(object sender, EventArgs e)
+        {
+            IEnumerable<Button> butoes;
+            butoes = this.Controls.OfType<Button>();
         }
 
     }

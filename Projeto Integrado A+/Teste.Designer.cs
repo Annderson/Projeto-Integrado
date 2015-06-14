@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Teste));
             this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.protocolosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.B99 = new System.Windows.Forms.Button();
@@ -140,35 +139,6 @@
             this.B10 = new System.Windows.Forms.Button();
             this.B1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.GRBsorteio.SuspendLayout();
             this.SuspendLayout();
@@ -189,6 +159,7 @@
             // 
             // B99
             // 
+            this.B99.AccessibleName = "99";
             this.B99.Location = new System.Drawing.Point(394, 271);
             this.B99.Name = "B99";
             this.B99.Size = new System.Drawing.Size(28, 22);
@@ -198,6 +169,7 @@
             // 
             // B00
             // 
+            this.B00.AccessibleName = "00";
             this.B00.Location = new System.Drawing.Point(442, 271);
             this.B00.Name = "B00";
             this.B00.Size = new System.Drawing.Size(28, 22);
@@ -207,6 +179,7 @@
             // 
             // B95
             // 
+            this.B95.AccessibleName = "95";
             this.B95.Location = new System.Drawing.Point(203, 271);
             this.B95.Name = "B95";
             this.B95.Size = new System.Drawing.Size(28, 22);
@@ -216,6 +189,7 @@
             // 
             // B96
             // 
+            this.B96.AccessibleName = "96";
             this.B96.Location = new System.Drawing.Point(253, 271);
             this.B96.Name = "B96";
             this.B96.Size = new System.Drawing.Size(28, 22);
@@ -225,6 +199,7 @@
             // 
             // B97
             // 
+            this.B97.AccessibleName = "97";
             this.B97.Location = new System.Drawing.Point(300, 271);
             this.B97.Name = "B97";
             this.B97.Size = new System.Drawing.Size(28, 22);
@@ -234,6 +209,7 @@
             // 
             // B98
             // 
+            this.B98.AccessibleName = "98";
             this.B98.Location = new System.Drawing.Point(345, 271);
             this.B98.Name = "B98";
             this.B98.Size = new System.Drawing.Size(28, 22);
@@ -243,6 +219,7 @@
             // 
             // B90
             // 
+            this.B90.AccessibleName = "90";
             this.B90.Location = new System.Drawing.Point(442, 243);
             this.B90.Name = "B90";
             this.B90.Size = new System.Drawing.Size(28, 22);
@@ -252,6 +229,7 @@
             // 
             // B89
             // 
+            this.B89.AccessibleName = "89";
             this.B89.Location = new System.Drawing.Point(394, 243);
             this.B89.Name = "B89";
             this.B89.Size = new System.Drawing.Size(28, 22);
@@ -261,6 +239,7 @@
             // 
             // B88
             // 
+            this.B88.AccessibleName = "88";
             this.B88.Location = new System.Drawing.Point(345, 243);
             this.B88.Name = "B88";
             this.B88.Size = new System.Drawing.Size(28, 22);
@@ -287,6 +266,7 @@
             // 
             // B81
             // 
+            this.B81.AccessibleName = "81";
             this.B81.Location = new System.Drawing.Point(16, 243);
             this.B81.Name = "B81";
             this.B81.Size = new System.Drawing.Size(28, 22);
@@ -296,6 +276,7 @@
             // 
             // B86
             // 
+            this.B86.AccessibleName = "86";
             this.B86.Location = new System.Drawing.Point(253, 243);
             this.B86.Name = "B86";
             this.B86.Size = new System.Drawing.Size(28, 22);
@@ -305,6 +286,7 @@
             // 
             // B85
             // 
+            this.B85.AccessibleName = "85";
             this.B85.Location = new System.Drawing.Point(203, 243);
             this.B85.Name = "B85";
             this.B85.Size = new System.Drawing.Size(28, 22);
@@ -314,6 +296,7 @@
             // 
             // B84
             // 
+            this.B84.AccessibleName = "84";
             this.B84.Location = new System.Drawing.Point(155, 243);
             this.B84.Name = "B84";
             this.B84.Size = new System.Drawing.Size(28, 22);
@@ -323,6 +306,7 @@
             // 
             // B83
             // 
+            this.B83.AccessibleName = "83";
             this.B83.Location = new System.Drawing.Point(109, 243);
             this.B83.Name = "B83";
             this.B83.Size = new System.Drawing.Size(28, 22);
@@ -332,6 +316,7 @@
             // 
             // B82
             // 
+            this.B82.AccessibleName = "82";
             this.B82.Location = new System.Drawing.Point(63, 243);
             this.B82.Name = "B82";
             this.B82.Size = new System.Drawing.Size(28, 22);
@@ -341,6 +326,7 @@
             // 
             // B91
             // 
+            this.B91.AccessibleName = "91";
             this.B91.Location = new System.Drawing.Point(16, 271);
             this.B91.Name = "B91";
             this.B91.Size = new System.Drawing.Size(28, 22);
@@ -350,6 +336,7 @@
             // 
             // B87
             // 
+            this.B87.AccessibleName = "87";
             this.B87.Location = new System.Drawing.Point(300, 243);
             this.B87.Name = "B87";
             this.B87.Size = new System.Drawing.Size(28, 22);
@@ -365,9 +352,11 @@
             this.BUTstop.TabIndex = 15;
             this.BUTstop.Text = "Stop";
             this.BUTstop.UseVisualStyleBackColor = true;
+            this.BUTstop.Click += new System.EventHandler(this.BUTstop_Click);
             // 
             // B92
             // 
+            this.B92.AccessibleName = "92";
             this.B92.Location = new System.Drawing.Point(63, 271);
             this.B92.Name = "B92";
             this.B92.Size = new System.Drawing.Size(28, 22);
@@ -377,6 +366,7 @@
             // 
             // B93
             // 
+            this.B93.AccessibleName = "93";
             this.B93.Location = new System.Drawing.Point(109, 271);
             this.B93.Name = "B93";
             this.B93.Size = new System.Drawing.Size(28, 22);
@@ -386,6 +376,7 @@
             // 
             // B94
             // 
+            this.B94.AccessibleName = "94";
             this.B94.Location = new System.Drawing.Point(155, 271);
             this.B94.Name = "B94";
             this.B94.Size = new System.Drawing.Size(28, 22);
@@ -395,6 +386,7 @@
             // 
             // B80
             // 
+            this.B80.AccessibleName = "80";
             this.B80.Location = new System.Drawing.Point(442, 215);
             this.B80.Name = "B80";
             this.B80.Size = new System.Drawing.Size(28, 22);
@@ -404,6 +396,7 @@
             // 
             // B73
             // 
+            this.B73.AccessibleName = "73";
             this.B73.Location = new System.Drawing.Point(109, 215);
             this.B73.Name = "B73";
             this.B73.Size = new System.Drawing.Size(28, 22);
@@ -413,6 +406,7 @@
             // 
             // B74
             // 
+            this.B74.AccessibleName = "74";
             this.B74.Location = new System.Drawing.Point(155, 215);
             this.B74.Name = "B74";
             this.B74.Size = new System.Drawing.Size(28, 22);
@@ -422,6 +416,7 @@
             // 
             // B75
             // 
+            this.B75.AccessibleName = "75";
             this.B75.Location = new System.Drawing.Point(203, 215);
             this.B75.Name = "B75";
             this.B75.Size = new System.Drawing.Size(28, 22);
@@ -431,6 +426,7 @@
             // 
             // B76
             // 
+            this.B76.AccessibleName = "76";
             this.B76.Location = new System.Drawing.Point(253, 215);
             this.B76.Name = "B76";
             this.B76.Size = new System.Drawing.Size(28, 22);
@@ -440,6 +436,7 @@
             // 
             // B77
             // 
+            this.B77.AccessibleName = "77";
             this.B77.Location = new System.Drawing.Point(300, 215);
             this.B77.Name = "B77";
             this.B77.Size = new System.Drawing.Size(28, 22);
@@ -449,6 +446,7 @@
             // 
             // B78
             // 
+            this.B78.AccessibleName = "78";
             this.B78.Location = new System.Drawing.Point(345, 215);
             this.B78.Name = "B78";
             this.B78.Size = new System.Drawing.Size(28, 22);
@@ -458,6 +456,7 @@
             // 
             // B79
             // 
+            this.B79.AccessibleName = "79";
             this.B79.Location = new System.Drawing.Point(394, 215);
             this.B79.Name = "B79";
             this.B79.Size = new System.Drawing.Size(28, 22);
@@ -467,6 +466,7 @@
             // 
             // B67
             // 
+            this.B67.AccessibleName = "67";
             this.B67.Location = new System.Drawing.Point(300, 187);
             this.B67.Name = "B67";
             this.B67.Size = new System.Drawing.Size(28, 22);
@@ -482,9 +482,11 @@
             this.BUTstar.TabIndex = 14;
             this.BUTstar.Text = "Start";
             this.BUTstar.UseVisualStyleBackColor = true;
+            this.BUTstar.Click += new System.EventHandler(this.BUTstar_Click);
             // 
             // B72
             // 
+            this.B72.AccessibleName = "72";
             this.B72.Location = new System.Drawing.Point(63, 215);
             this.B72.Name = "B72";
             this.B72.Size = new System.Drawing.Size(28, 22);
@@ -496,11 +498,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
-            this.listaToolStripMenuItem,
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.toolsToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.listaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(579, 24);
@@ -514,6 +512,7 @@
             // 
             // B66
             // 
+            this.B66.AccessibleName = "66";
             this.B66.Location = new System.Drawing.Point(253, 187);
             this.B66.Name = "B66";
             this.B66.Size = new System.Drawing.Size(28, 22);
@@ -523,6 +522,7 @@
             // 
             // B71
             // 
+            this.B71.AccessibleName = "71";
             this.B71.Location = new System.Drawing.Point(16, 215);
             this.B71.Name = "B71";
             this.B71.Size = new System.Drawing.Size(28, 22);
@@ -532,6 +532,7 @@
             // 
             // B70
             // 
+            this.B70.AccessibleName = "70";
             this.B70.Location = new System.Drawing.Point(442, 187);
             this.B70.Name = "B70";
             this.B70.Size = new System.Drawing.Size(28, 22);
@@ -541,6 +542,7 @@
             // 
             // B69
             // 
+            this.B69.AccessibleName = "69";
             this.B69.Location = new System.Drawing.Point(394, 187);
             this.B69.Name = "B69";
             this.B69.Size = new System.Drawing.Size(28, 22);
@@ -550,6 +552,7 @@
             // 
             // B68
             // 
+            this.B68.AccessibleName = "68";
             this.B68.Location = new System.Drawing.Point(345, 187);
             this.B68.Name = "B68";
             this.B68.Size = new System.Drawing.Size(28, 22);
@@ -559,6 +562,7 @@
             // 
             // B61
             // 
+            this.B61.AccessibleName = "61";
             this.B61.Location = new System.Drawing.Point(16, 187);
             this.B61.Name = "B61";
             this.B61.Size = new System.Drawing.Size(28, 22);
@@ -568,6 +572,7 @@
             // 
             // B62
             // 
+            this.B62.AccessibleName = "62";
             this.B62.Location = new System.Drawing.Point(63, 187);
             this.B62.Name = "B62";
             this.B62.Size = new System.Drawing.Size(28, 22);
@@ -577,6 +582,7 @@
             // 
             // B63
             // 
+            this.B63.AccessibleName = "63";
             this.B63.Location = new System.Drawing.Point(109, 187);
             this.B63.Name = "B63";
             this.B63.Size = new System.Drawing.Size(28, 22);
@@ -586,6 +592,7 @@
             // 
             // B64
             // 
+            this.B64.AccessibleName = "64";
             this.B64.Location = new System.Drawing.Point(155, 187);
             this.B64.Name = "B64";
             this.B64.Size = new System.Drawing.Size(28, 22);
@@ -595,6 +602,7 @@
             // 
             // B65
             // 
+            this.B65.AccessibleName = "65";
             this.B65.Location = new System.Drawing.Point(203, 187);
             this.B65.Name = "B65";
             this.B65.Size = new System.Drawing.Size(28, 22);
@@ -604,6 +612,7 @@
             // 
             // B58
             // 
+            this.B58.AccessibleName = "58";
             this.B58.Location = new System.Drawing.Point(345, 159);
             this.B58.Name = "B58";
             this.B58.Size = new System.Drawing.Size(28, 22);
@@ -613,6 +622,7 @@
             // 
             // B59
             // 
+            this.B59.AccessibleName = "59";
             this.B59.Location = new System.Drawing.Point(394, 159);
             this.B59.Name = "B59";
             this.B59.Size = new System.Drawing.Size(28, 22);
@@ -622,6 +632,7 @@
             // 
             // B60
             // 
+            this.B60.AccessibleName = "60";
             this.B60.Location = new System.Drawing.Point(442, 159);
             this.B60.Name = "B60";
             this.B60.Size = new System.Drawing.Size(28, 22);
@@ -631,6 +642,7 @@
             // 
             // B51
             // 
+            this.B51.AccessibleName = "51";
             this.B51.Location = new System.Drawing.Point(16, 159);
             this.B51.Name = "B51";
             this.B51.Size = new System.Drawing.Size(28, 22);
@@ -640,6 +652,7 @@
             // 
             // B52
             // 
+            this.B52.AccessibleName = "52";
             this.B52.Location = new System.Drawing.Point(63, 159);
             this.B52.Name = "B52";
             this.B52.Size = new System.Drawing.Size(28, 22);
@@ -649,6 +662,7 @@
             // 
             // B53
             // 
+            this.B53.AccessibleName = "53";
             this.B53.Location = new System.Drawing.Point(109, 159);
             this.B53.Name = "B53";
             this.B53.Size = new System.Drawing.Size(28, 22);
@@ -658,6 +672,7 @@
             // 
             // B54
             // 
+            this.B54.AccessibleName = "54";
             this.B54.Location = new System.Drawing.Point(155, 159);
             this.B54.Name = "B54";
             this.B54.Size = new System.Drawing.Size(28, 22);
@@ -667,6 +682,7 @@
             // 
             // B55
             // 
+            this.B55.AccessibleName = "55";
             this.B55.Location = new System.Drawing.Point(203, 159);
             this.B55.Name = "B55";
             this.B55.Size = new System.Drawing.Size(28, 22);
@@ -676,6 +692,7 @@
             // 
             // B56
             // 
+            this.B56.AccessibleName = "56";
             this.B56.Location = new System.Drawing.Point(253, 159);
             this.B56.Name = "B56";
             this.B56.Size = new System.Drawing.Size(28, 22);
@@ -685,6 +702,7 @@
             // 
             // B57
             // 
+            this.B57.AccessibleName = "57";
             this.B57.Location = new System.Drawing.Point(300, 159);
             this.B57.Name = "B57";
             this.B57.Size = new System.Drawing.Size(28, 22);
@@ -694,6 +712,7 @@
             // 
             // B49
             // 
+            this.B49.AccessibleName = "49";
             this.B49.Location = new System.Drawing.Point(394, 131);
             this.B49.Name = "B49";
             this.B49.Size = new System.Drawing.Size(28, 22);
@@ -703,6 +722,7 @@
             // 
             // B48
             // 
+            this.B48.AccessibleName = "48";
             this.B48.Location = new System.Drawing.Point(345, 131);
             this.B48.Name = "B48";
             this.B48.Size = new System.Drawing.Size(28, 22);
@@ -712,6 +732,7 @@
             // 
             // B46
             // 
+            this.B46.AccessibleName = "46";
             this.B46.Location = new System.Drawing.Point(253, 131);
             this.B46.Name = "B46";
             this.B46.Size = new System.Drawing.Size(28, 22);
@@ -721,6 +742,7 @@
             // 
             // B41
             // 
+            this.B41.AccessibleName = "41";
             this.B41.Location = new System.Drawing.Point(16, 131);
             this.B41.Name = "B41";
             this.B41.Size = new System.Drawing.Size(28, 22);
@@ -730,6 +752,7 @@
             // 
             // B42
             // 
+            this.B42.AccessibleName = "42";
             this.B42.Location = new System.Drawing.Point(63, 131);
             this.B42.Name = "B42";
             this.B42.Size = new System.Drawing.Size(28, 22);
@@ -848,6 +871,7 @@
             // 
             // B43
             // 
+            this.B43.AccessibleName = "43";
             this.B43.Location = new System.Drawing.Point(109, 131);
             this.B43.Name = "B43";
             this.B43.Size = new System.Drawing.Size(28, 22);
@@ -857,6 +881,7 @@
             // 
             // B44
             // 
+            this.B44.AccessibleName = "44";
             this.B44.Location = new System.Drawing.Point(155, 131);
             this.B44.Name = "B44";
             this.B44.Size = new System.Drawing.Size(28, 22);
@@ -866,6 +891,7 @@
             // 
             // B47
             // 
+            this.B47.AccessibleName = "47";
             this.B47.Location = new System.Drawing.Point(300, 131);
             this.B47.Name = "B47";
             this.B47.Size = new System.Drawing.Size(28, 22);
@@ -875,6 +901,7 @@
             // 
             // B45
             // 
+            this.B45.AccessibleName = "45";
             this.B45.Location = new System.Drawing.Point(203, 131);
             this.B45.Name = "B45";
             this.B45.Size = new System.Drawing.Size(28, 22);
@@ -884,6 +911,7 @@
             // 
             // B40
             // 
+            this.B40.AccessibleName = "40";
             this.B40.Location = new System.Drawing.Point(442, 103);
             this.B40.Name = "B40";
             this.B40.Size = new System.Drawing.Size(28, 22);
@@ -893,6 +921,7 @@
             // 
             // B31
             // 
+            this.B31.AccessibleName = "31";
             this.B31.Location = new System.Drawing.Point(16, 103);
             this.B31.Name = "B31";
             this.B31.Size = new System.Drawing.Size(28, 22);
@@ -902,6 +931,7 @@
             // 
             // B32
             // 
+            this.B32.AccessibleName = "32";
             this.B32.Location = new System.Drawing.Point(63, 103);
             this.B32.Name = "B32";
             this.B32.Size = new System.Drawing.Size(28, 22);
@@ -911,6 +941,7 @@
             // 
             // B33
             // 
+            this.B33.AccessibleName = "33";
             this.B33.Location = new System.Drawing.Point(109, 103);
             this.B33.Name = "B33";
             this.B33.Size = new System.Drawing.Size(28, 22);
@@ -920,6 +951,7 @@
             // 
             // B34
             // 
+            this.B34.AccessibleName = "34";
             this.B34.Location = new System.Drawing.Point(155, 103);
             this.B34.Name = "B34";
             this.B34.Size = new System.Drawing.Size(28, 22);
@@ -929,6 +961,7 @@
             // 
             // B35
             // 
+            this.B35.AccessibleName = "35";
             this.B35.Location = new System.Drawing.Point(203, 103);
             this.B35.Name = "B35";
             this.B35.Size = new System.Drawing.Size(28, 22);
@@ -938,6 +971,7 @@
             // 
             // B37
             // 
+            this.B37.AccessibleName = "37";
             this.B37.Location = new System.Drawing.Point(300, 103);
             this.B37.Name = "B37";
             this.B37.Size = new System.Drawing.Size(28, 22);
@@ -947,6 +981,7 @@
             // 
             // B38
             // 
+            this.B38.AccessibleName = "38";
             this.B38.Location = new System.Drawing.Point(345, 103);
             this.B38.Name = "B38";
             this.B38.Size = new System.Drawing.Size(28, 22);
@@ -956,6 +991,7 @@
             // 
             // B39
             // 
+            this.B39.AccessibleName = "39";
             this.B39.Location = new System.Drawing.Point(394, 103);
             this.B39.Name = "B39";
             this.B39.Size = new System.Drawing.Size(28, 22);
@@ -965,6 +1001,7 @@
             // 
             // B50
             // 
+            this.B50.AccessibleName = "50";
             this.B50.Location = new System.Drawing.Point(442, 131);
             this.B50.Name = "B50";
             this.B50.Size = new System.Drawing.Size(28, 22);
@@ -974,6 +1011,7 @@
             // 
             // B36
             // 
+            this.B36.AccessibleName = "36";
             this.B36.Location = new System.Drawing.Point(253, 103);
             this.B36.Name = "B36";
             this.B36.Size = new System.Drawing.Size(28, 22);
@@ -983,6 +1021,7 @@
             // 
             // B21
             // 
+            this.B21.AccessibleName = "21";
             this.B21.Location = new System.Drawing.Point(16, 75);
             this.B21.Name = "B21";
             this.B21.Size = new System.Drawing.Size(28, 22);
@@ -992,6 +1031,7 @@
             // 
             // B22
             // 
+            this.B22.AccessibleName = "22";
             this.B22.Location = new System.Drawing.Point(63, 75);
             this.B22.Name = "B22";
             this.B22.Size = new System.Drawing.Size(28, 22);
@@ -1001,6 +1041,7 @@
             // 
             // B23
             // 
+            this.B23.AccessibleName = "23";
             this.B23.Location = new System.Drawing.Point(109, 75);
             this.B23.Name = "B23";
             this.B23.Size = new System.Drawing.Size(28, 22);
@@ -1010,6 +1051,7 @@
             // 
             // B24
             // 
+            this.B24.AccessibleName = "24";
             this.B24.Location = new System.Drawing.Point(155, 75);
             this.B24.Name = "B24";
             this.B24.Size = new System.Drawing.Size(28, 22);
@@ -1019,6 +1061,7 @@
             // 
             // B25
             // 
+            this.B25.AccessibleName = "25";
             this.B25.Location = new System.Drawing.Point(203, 75);
             this.B25.Name = "B25";
             this.B25.Size = new System.Drawing.Size(28, 22);
@@ -1028,6 +1071,7 @@
             // 
             // B27
             // 
+            this.B27.AccessibleName = "27";
             this.B27.Location = new System.Drawing.Point(300, 75);
             this.B27.Name = "B27";
             this.B27.Size = new System.Drawing.Size(28, 22);
@@ -1037,6 +1081,7 @@
             // 
             // B26
             // 
+            this.B26.AccessibleName = "26";
             this.B26.Location = new System.Drawing.Point(253, 75);
             this.B26.Name = "B26";
             this.B26.Size = new System.Drawing.Size(28, 22);
@@ -1046,6 +1091,7 @@
             // 
             // B28
             // 
+            this.B28.AccessibleName = "28";
             this.B28.Location = new System.Drawing.Point(345, 75);
             this.B28.Name = "B28";
             this.B28.Size = new System.Drawing.Size(28, 22);
@@ -1055,6 +1101,7 @@
             // 
             // B29
             // 
+            this.B29.AccessibleName = "29";
             this.B29.Location = new System.Drawing.Point(394, 75);
             this.B29.Name = "B29";
             this.B29.Size = new System.Drawing.Size(28, 22);
@@ -1064,6 +1111,7 @@
             // 
             // B30
             // 
+            this.B30.AccessibleName = "30";
             this.B30.Location = new System.Drawing.Point(442, 75);
             this.B30.Name = "B30";
             this.B30.Size = new System.Drawing.Size(28, 22);
@@ -1073,6 +1121,7 @@
             // 
             // B13
             // 
+            this.B13.AccessibleName = "13";
             this.B13.Location = new System.Drawing.Point(109, 47);
             this.B13.Name = "B13";
             this.B13.Size = new System.Drawing.Size(28, 22);
@@ -1082,6 +1131,7 @@
             // 
             // B14
             // 
+            this.B14.AccessibleName = "14";
             this.B14.Location = new System.Drawing.Point(155, 47);
             this.B14.Name = "B14";
             this.B14.Size = new System.Drawing.Size(28, 22);
@@ -1091,6 +1141,7 @@
             // 
             // B15
             // 
+            this.B15.AccessibleName = "15";
             this.B15.Location = new System.Drawing.Point(203, 47);
             this.B15.Name = "B15";
             this.B15.Size = new System.Drawing.Size(28, 22);
@@ -1100,6 +1151,7 @@
             // 
             // B16
             // 
+            this.B16.AccessibleName = "16";
             this.B16.Location = new System.Drawing.Point(253, 47);
             this.B16.Name = "B16";
             this.B16.Size = new System.Drawing.Size(28, 22);
@@ -1109,6 +1161,7 @@
             // 
             // B17
             // 
+            this.B17.AccessibleName = "17";
             this.B17.Location = new System.Drawing.Point(300, 47);
             this.B17.Name = "B17";
             this.B17.Size = new System.Drawing.Size(28, 22);
@@ -1118,6 +1171,7 @@
             // 
             // B18
             // 
+            this.B18.AccessibleName = "18";
             this.B18.Location = new System.Drawing.Point(345, 47);
             this.B18.Name = "B18";
             this.B18.Size = new System.Drawing.Size(28, 22);
@@ -1127,6 +1181,7 @@
             // 
             // B19
             // 
+            this.B19.AccessibleName = "19";
             this.B19.Location = new System.Drawing.Point(394, 47);
             this.B19.Name = "B19";
             this.B19.Size = new System.Drawing.Size(28, 22);
@@ -1136,6 +1191,7 @@
             // 
             // B20
             // 
+            this.B20.AccessibleName = "20";
             this.B20.Location = new System.Drawing.Point(442, 47);
             this.B20.Name = "B20";
             this.B20.Size = new System.Drawing.Size(28, 22);
@@ -1145,6 +1201,7 @@
             // 
             // B12
             // 
+            this.B12.AccessibleName = "12";
             this.B12.Location = new System.Drawing.Point(63, 47);
             this.B12.Name = "B12";
             this.B12.Size = new System.Drawing.Size(28, 22);
@@ -1154,6 +1211,7 @@
             // 
             // B11
             // 
+            this.B11.AccessibleName = "11";
             this.B11.Location = new System.Drawing.Point(16, 47);
             this.B11.Name = "B11";
             this.B11.Size = new System.Drawing.Size(28, 22);
@@ -1174,6 +1232,7 @@
             // 
             // B3
             // 
+            this.B3.AccessibleName = "3";
             this.B3.Location = new System.Drawing.Point(109, 19);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(28, 22);
@@ -1183,6 +1242,7 @@
             // 
             // B4
             // 
+            this.B4.AccessibleName = "4";
             this.B4.Location = new System.Drawing.Point(155, 19);
             this.B4.Name = "B4";
             this.B4.Size = new System.Drawing.Size(28, 22);
@@ -1192,6 +1252,7 @@
             // 
             // B5
             // 
+            this.B5.AccessibleName = "5";
             this.B5.Location = new System.Drawing.Point(203, 19);
             this.B5.Name = "B5";
             this.B5.Size = new System.Drawing.Size(28, 22);
@@ -1201,6 +1262,7 @@
             // 
             // B6
             // 
+            this.B6.AccessibleName = "6";
             this.B6.Location = new System.Drawing.Point(253, 19);
             this.B6.Name = "B6";
             this.B6.Size = new System.Drawing.Size(28, 22);
@@ -1210,6 +1272,7 @@
             // 
             // B7
             // 
+            this.B7.AccessibleName = "7";
             this.B7.Location = new System.Drawing.Point(300, 19);
             this.B7.Name = "B7";
             this.B7.Size = new System.Drawing.Size(28, 22);
@@ -1219,6 +1282,7 @@
             // 
             // B9
             // 
+            this.B9.AccessibleName = "9";
             this.B9.Location = new System.Drawing.Point(394, 19);
             this.B9.Name = "B9";
             this.B9.Size = new System.Drawing.Size(28, 22);
@@ -1228,6 +1292,7 @@
             // 
             // B8
             // 
+            this.B8.AccessibleName = "8";
             this.B8.Location = new System.Drawing.Point(345, 19);
             this.B8.Name = "B8";
             this.B8.Size = new System.Drawing.Size(28, 22);
@@ -1237,6 +1302,7 @@
             // 
             // B10
             // 
+            this.B10.AccessibleName = "10";
             this.B10.Location = new System.Drawing.Point(442, 19);
             this.B10.Name = "B10";
             this.B10.Size = new System.Drawing.Size(28, 22);
@@ -1246,6 +1312,7 @@
             // 
             // B1
             // 
+            this.B1.AccessibleName = "1";
             this.B1.Location = new System.Drawing.Point(16, 19);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(28, 22);
@@ -1256,231 +1323,11 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.openToolStripMenuItem,
-            this.toolStripSeparator,
-            this.saveToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.printToolStripMenuItem,
-            this.printPreviewToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
-            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.newToolStripMenuItem.Text = "&New";
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.openToolStripMenuItem.Text = "&Open";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 6);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.saveToolStripMenuItem.Text = "&Save";
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.saveAsToolStripMenuItem.Text = "Save &As";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 6);
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.printToolStripMenuItem.Text = "&Print";
-            // 
-            // printPreviewToolStripMenuItem
-            // 
-            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
-            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.selectAllToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "&Edit";
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.undoToolStripMenuItem.Text = "&Undo";
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.redoToolStripMenuItem.Text = "&Redo";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
-            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.cutToolStripMenuItem.Text = "Cu&t";
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
-            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.copyToolStripMenuItem.Text = "&Copy";
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
-            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.pasteToolStripMenuItem.Text = "&Paste";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.selectAllToolStripMenuItem.Text = "Select &All";
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.customizeToolStripMenuItem,
-            this.optionsToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.toolsToolStripMenuItem.Text = "&Tools";
-            // 
-            // customizeToolStripMenuItem
-            // 
-            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.customizeToolStripMenuItem.Text = "&Customize";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.optionsToolStripMenuItem.Text = "&Options";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contentsToolStripMenuItem,
-            this.indexToolStripMenuItem,
-            this.searchToolStripMenuItem,
-            this.toolStripSeparator5,
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
-            // 
-            // contentsToolStripMenuItem
-            // 
-            this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.contentsToolStripMenuItem.Text = "&Contents";
-            // 
-            // indexToolStripMenuItem
-            // 
-            this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.indexToolStripMenuItem.Text = "&Index";
-            // 
-            // searchToolStripMenuItem
-            // 
-            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.searchToolStripMenuItem.Text = "&Search";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 6);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
-            this.aboutToolStripMenuItem.Text = "&About...";
-            // 
-            // Sorteio
+            // Teste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1491,7 +1338,7 @@
             this.Controls.Add(this.BUTstar);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.GRBsorteio);
-            this.Name = "Sorteio";
+            this.Name = "Teste";
             this.Text = "Tabela de sorteio";
             this.Load += new System.EventHandler(this.Sorteio_Load);
             this.Click += new System.EventHandler(this.timer1_Tick);
@@ -1614,35 +1461,6 @@
         public System.Windows.Forms.Button B8;
         public System.Windows.Forms.Button B10;
         public System.Windows.Forms.Button B1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem printPreviewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem customizeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem contentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem indexToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
 
 

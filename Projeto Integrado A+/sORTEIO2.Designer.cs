@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.GRBsorteio = new System.Windows.Forms.GroupBox();
+            this.B9 = new System.Windows.Forms.Button();
             this.B99 = new System.Windows.Forms.Button();
             this.B00 = new System.Windows.Forms.Button();
             this.B95 = new System.Windows.Forms.Button();
@@ -139,7 +140,6 @@
             this.BUTstop = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.B9 = new System.Windows.Forms.Button();
             this.GRBsorteio.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -253,6 +253,16 @@
             this.GRBsorteio.TabStop = false;
             this.GRBsorteio.Text = "Quadro de Sorteio";
             // 
+            // B9
+            // 
+            this.B9.AccessibleName = "9";
+            this.B9.Location = new System.Drawing.Point(394, 19);
+            this.B9.Name = "B9";
+            this.B9.Size = new System.Drawing.Size(28, 22);
+            this.B9.TabIndex = 144;
+            this.B9.Text = "9";
+            this.B9.UseVisualStyleBackColor = true;
+            // 
             // B99
             // 
             this.B99.Location = new System.Drawing.Point(394, 271);
@@ -309,6 +319,7 @@
             // 
             // B90
             // 
+            this.B90.AccessibleName = "90";
             this.B90.Location = new System.Drawing.Point(442, 243);
             this.B90.Name = "B90";
             this.B90.Size = new System.Drawing.Size(28, 22);
@@ -318,6 +329,7 @@
             // 
             // B89
             // 
+            this.B89.AccessibleName = "89";
             this.B89.Location = new System.Drawing.Point(394, 243);
             this.B89.Name = "B89";
             this.B89.Size = new System.Drawing.Size(28, 22);
@@ -327,6 +339,7 @@
             // 
             // B88
             // 
+            this.B88.AccessibleName = "88";
             this.B88.Location = new System.Drawing.Point(345, 243);
             this.B88.Name = "B88";
             this.B88.Size = new System.Drawing.Size(28, 22);
@@ -336,6 +349,7 @@
             // 
             // B81
             // 
+            this.B81.AccessibleName = "81";
             this.B81.Location = new System.Drawing.Point(16, 243);
             this.B81.Name = "B81";
             this.B81.Size = new System.Drawing.Size(28, 22);
@@ -345,6 +359,7 @@
             // 
             // B86
             // 
+            this.B86.AccessibleName = "86";
             this.B86.Location = new System.Drawing.Point(253, 243);
             this.B86.Name = "B86";
             this.B86.Size = new System.Drawing.Size(28, 22);
@@ -354,6 +369,7 @@
             // 
             // B87
             // 
+            this.B87.AccessibleName = "87";
             this.B87.Location = new System.Drawing.Point(300, 243);
             this.B87.Name = "B87";
             this.B87.Size = new System.Drawing.Size(28, 22);
@@ -363,6 +379,7 @@
             // 
             // B85
             // 
+            this.B85.AccessibleName = "85";
             this.B85.Location = new System.Drawing.Point(203, 243);
             this.B85.Name = "B85";
             this.B85.Size = new System.Drawing.Size(28, 22);
@@ -372,6 +389,7 @@
             // 
             // B84
             // 
+            this.B84.AccessibleName = "84";
             this.B84.Location = new System.Drawing.Point(155, 243);
             this.B84.Name = "B84";
             this.B84.Size = new System.Drawing.Size(28, 22);
@@ -381,6 +399,7 @@
             // 
             // B83
             // 
+            this.B83.AccessibleName = "83";
             this.B83.Location = new System.Drawing.Point(109, 243);
             this.B83.Name = "B83";
             this.B83.Size = new System.Drawing.Size(28, 22);
@@ -390,6 +409,7 @@
             // 
             // B82
             // 
+            this.B82.AccessibleName = "82";
             this.B82.Location = new System.Drawing.Point(63, 243);
             this.B82.Name = "B82";
             this.B82.Size = new System.Drawing.Size(28, 22);
@@ -1227,16 +1247,6 @@
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 9;
             // 
-            // B9
-            // 
-            this.B9.AccessibleName = "9";
-            this.B9.Location = new System.Drawing.Point(394, 19);
-            this.B9.Name = "B9";
-            this.B9.Size = new System.Drawing.Size(28, 22);
-            this.B9.TabIndex = 144;
-            this.B9.Text = "9";
-            this.B9.UseVisualStyleBackColor = true;
-            // 
             // Sorteio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1252,6 +1262,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Sorteio2";
             this.Text = "Tabela de sorteio:";
+            this.Load += new System.EventHandler(this.Sorteio2_Load);
             this.GRBsorteio.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
