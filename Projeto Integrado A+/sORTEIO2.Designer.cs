@@ -140,6 +140,8 @@
             this.BUTstop = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.BUTlimpar = new System.Windows.Forms.Button();
+            this.BUTaposte = new System.Windows.Forms.Button();
             this.GRBsorteio.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -1194,13 +1196,13 @@
             this.listaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.protocolosToolStripMenuItem});
             this.listaToolStripMenuItem.Name = "listaToolStripMenuItem";
-            this.listaToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.listaToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.listaToolStripMenuItem.Text = "Lista";
             // 
             // protocolosToolStripMenuItem
             // 
             this.protocolosToolStripMenuItem.Name = "protocolosToolStripMenuItem";
-            this.protocolosToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.protocolosToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.protocolosToolStripMenuItem.Text = "Protocolos";
             // 
             // label1
@@ -1214,6 +1216,7 @@
             // 
             // TXTsortiados
             // 
+            this.TXTsortiados.Enabled = false;
             this.TXTsortiados.Location = new System.Drawing.Point(125, 352);
             this.TXTsortiados.Multiline = true;
             this.TXTsortiados.Name = "TXTsortiados";
@@ -1239,6 +1242,10 @@
             this.BUTstop.Text = "Stop";
             this.BUTstop.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -1247,11 +1254,31 @@
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 9;
             // 
+            // BUTlimpar
+            // 
+            this.BUTlimpar.Location = new System.Drawing.Point(203, 406);
+            this.BUTlimpar.Name = "BUTlimpar";
+            this.BUTlimpar.Size = new System.Drawing.Size(75, 23);
+            this.BUTlimpar.TabIndex = 20;
+            this.BUTlimpar.Text = "Limpar";
+            this.BUTlimpar.UseVisualStyleBackColor = true;
+            // 
+            // BUTaposte
+            // 
+            this.BUTaposte.Location = new System.Drawing.Point(443, 406);
+            this.BUTaposte.Name = "BUTaposte";
+            this.BUTaposte.Size = new System.Drawing.Size(75, 23);
+            this.BUTaposte.TabIndex = 19;
+            this.BUTaposte.Text = "Apostar";
+            this.BUTaposte.UseVisualStyleBackColor = true;
+            // 
             // Sorteio2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(552, 451);
+            this.Controls.Add(this.BUTlimpar);
+            this.Controls.Add(this.BUTaposte);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BUTstop);
             this.Controls.Add(this.BUTstar);
@@ -1384,5 +1411,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button B9;
+        private System.Windows.Forms.Button BUTlimpar;
+        private System.Windows.Forms.Button BUTaposte;
     }
 }

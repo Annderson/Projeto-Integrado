@@ -12,43 +12,46 @@ namespace Projeto_Integrado_A_
 {
     public partial class Sorteio2 : Form
     {
+        List<int> Sortiados;
         public Sorteio2()
         {
             InitializeComponent();
+            Sortiados = new List<int>();
         }
+        IEnumerable<Button> butoes;
        
-
         private void BUTstar_Click(object sender, EventArgs e)
         {
-            int contador = 0;
-
-            Random rand = new Random();
-
-            while (contador < 10)
-            {
-                int S = rand.Next(00, 99);
-
-                foreach (var butoes in this.Controls.OfType<Button>())
-                {
-                    if (butoes.Text == Convert.ToString(S))
-                    {
-                        butoes.BackColor = Color.Red;
-                    }
-                }
-                TXTsortiados.Text = TXTsortiados.Text + " - " + S;
-                
-                
-                contador++;
-            }
-
+          
         }
-
 
         private void Sorteio2_Load(object sender, EventArgs e)
         {
-            IEnumerable<Button> butoes;
-            butoes = this.Controls.OfType<Button>();
+
+            butoes = this.Controls.OfType<GroupBox>().First().Controls.OfType<Button>();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+         
+
+            Random rand = new Random();
+            int S;
+                do{
+                     S = rand.Next(00, 99);
+                }while (Sortiados.Any(i => i == S));
+
+
+            foreach (var but in butoes)
+            {
+                if (but.Text == Convert.ToString(S))
+                {
+                        but.BackColor = Color.Red;
+                }
+            }
+            TXTsortiados.Text = TXTsortiados.Text + S.ToString("00") + " ";
+
+         }
 
     }
 }

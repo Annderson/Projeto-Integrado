@@ -69,7 +69,7 @@
             // BUTvap
             // 
             this.BUTvap.AccessibleDescription = "V";
-            this.BUTvap.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BUTvap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTvap.ForeColor = System.Drawing.Color.Blue;
             this.BUTvap.Location = new System.Drawing.Point(50, 502);
             this.BUTvap.Name = "BUTvap";
@@ -83,11 +83,11 @@
             // BUTlimp
             // 
             this.BUTlimp.AccessibleDescription = "L";
-            this.BUTlimp.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BUTlimp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTlimp.ForeColor = System.Drawing.Color.Blue;
-            this.BUTlimp.Location = new System.Drawing.Point(186, 501);
+            this.BUTlimp.Location = new System.Drawing.Point(201, 501);
             this.BUTlimp.Name = "BUTlimp";
-            this.BUTlimp.Size = new System.Drawing.Size(116, 24);
+            this.BUTlimp.Size = new System.Drawing.Size(95, 24);
             this.BUTlimp.TabIndex = 9;
             this.BUTlimp.Text = "Limpar";
             this.BUTlimp.UseVisualStyleBackColor = true;
@@ -116,11 +116,11 @@
             // BUTcons
             // 
             this.BUTcons.AccessibleDescription = "C";
-            this.BUTcons.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BUTcons.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTcons.ForeColor = System.Drawing.Color.Blue;
             this.BUTcons.Location = new System.Drawing.Point(424, 501);
             this.BUTcons.Name = "BUTcons";
-            this.BUTcons.Size = new System.Drawing.Size(120, 24);
+            this.BUTcons.Size = new System.Drawing.Size(117, 24);
             this.BUTcons.TabIndex = 14;
             this.BUTcons.Text = "Consultar aposta.";
             this.BUTcons.UseVisualStyleBackColor = true;
@@ -130,11 +130,11 @@
             // 
             this.BUTregras.AccessibleDescription = "R";
             this.BUTregras.BackColor = System.Drawing.SystemColors.Control;
-            this.BUTregras.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BUTregras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTregras.ForeColor = System.Drawing.Color.Blue;
-            this.BUTregras.Location = new System.Drawing.Point(551, 502);
+            this.BUTregras.Location = new System.Drawing.Point(561, 502);
             this.BUTregras.Name = "BUTregras";
-            this.BUTregras.Size = new System.Drawing.Size(98, 23);
+            this.BUTregras.Size = new System.Drawing.Size(88, 23);
             this.BUTregras.TabIndex = 15;
             this.BUTregras.Text = "Regras";
             this.BUTregras.UseVisualStyleBackColor = false;
@@ -142,7 +142,8 @@
             // 
             // button2
             // 
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Blue;
             this.button2.Location = new System.Drawing.Point(323, 502);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);

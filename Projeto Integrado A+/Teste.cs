@@ -44,7 +44,7 @@ namespace Projeto_Integrado_A_
             if (Sorteados.Count() >= 10)
             {
                 BUTstop.Enabled = true;
-                button1.Enabled = true;
+                BUTaposte.Enabled = true;
             }
 
 
@@ -79,22 +79,23 @@ namespace Projeto_Integrado_A_
             timer1.Enabled = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BUTlimpar_Click(object sender, EventArgs e)
+        {
+            TXTsortiados.Clear();
+            Sorteados.Clear();
+            BUTstop.Enabled = false;
+            BUTaposte.Enabled = false;
+
+            foreach (var btn in BotoesDeNumero)
+                btn.BackColor = BUTstop.BackColor;
+        }
+
+        private void BUTaposte_Click(object sender, EventArgs e)
         {
             Projeto_Integrado_A_v2.VerificaGravaAposta(TXTsortiados.Text);
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            TXTsortiados.Clear();
-            Sorteados.Clear();
-            BUTstop.Enabled = false;
-            button1.Enabled = false;
-
-            foreach (var btn in BotoesDeNumero)
-                btn.BackColor = BUTstop.BackColor;
-        }
 
     }
 }
