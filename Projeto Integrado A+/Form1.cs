@@ -111,7 +111,6 @@ namespace Projeto_Integrado_A_
                     break;
 
                 //limpar todas as informações inseridas pelo usuário
-
                 case "L":
                     {
                         ne.DefaultIfEmpty();
@@ -123,9 +122,7 @@ namespace Projeto_Integrado_A_
                         break;
                     }
 
-
                 //realiza consutla de protocolo e verifica valor do premio, caso se aplique
-
                 case "C":
                     {
                         int qd = 0, a = 0, nd, c2 = 0, dsCount;

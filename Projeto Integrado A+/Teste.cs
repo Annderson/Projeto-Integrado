@@ -105,5 +105,12 @@ namespace Projeto_Integrado_A_
                 btn.BackColor = BUTstop.BackColor;
         }
 
+        private void BUTaposte_Click(object sender, EventArgs e)
+        {
+            Projeto_Integrado_A_v2.VerificaGravaAposta(TXTsortiados.Text);
+            this.Close();
+        }
+
+
     }
 }
