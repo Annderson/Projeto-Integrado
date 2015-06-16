@@ -37,7 +37,6 @@
             this.TXTconsult = new System.Windows.Forms.TextBox();
             this.BUTcons = new System.Windows.Forms.Button();
             this.BUTregras = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -111,7 +110,7 @@
             this.TXTconsult.Location = new System.Drawing.Point(424, 474);
             this.TXTconsult.Multiline = true;
             this.TXTconsult.Name = "TXTconsult";
-            this.TXTconsult.Size = new System.Drawing.Size(158, 22);
+            this.TXTconsult.Size = new System.Drawing.Size(225, 22);
             this.TXTconsult.TabIndex = 13;
             // 
             // BUTcons
@@ -121,7 +120,7 @@
             this.BUTcons.ForeColor = System.Drawing.Color.Blue;
             this.BUTcons.Location = new System.Drawing.Point(424, 501);
             this.BUTcons.Name = "BUTcons";
-            this.BUTcons.Size = new System.Drawing.Size(120, 23);
+            this.BUTcons.Size = new System.Drawing.Size(120, 24);
             this.BUTcons.TabIndex = 14;
             this.BUTcons.Text = "Consultar aposta.";
             this.BUTcons.UseVisualStyleBackColor = true;
@@ -133,7 +132,7 @@
             this.BUTregras.BackColor = System.Drawing.SystemColors.Control;
             this.BUTregras.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTregras.ForeColor = System.Drawing.Color.Blue;
-            this.BUTregras.Location = new System.Drawing.Point(595, 511);
+            this.BUTregras.Location = new System.Drawing.Point(551, 502);
             this.BUTregras.Name = "BUTregras";
             this.BUTregras.Size = new System.Drawing.Size(98, 23);
             this.BUTregras.TabIndex = 15;
@@ -141,19 +140,10 @@
             this.BUTregras.UseVisualStyleBackColor = false;
             this.BUTregras.Click += new System.EventHandler(this.Processamento_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(333, 504);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Sorteio2";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(595, 482);
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button2.Location = new System.Drawing.Point(323, 502);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 17;
@@ -169,7 +159,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(695, 537);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.BUTregras);
             this.Controls.Add(this.BUTcons);
             this.Controls.Add(this.TXTconsult);
@@ -196,7 +185,6 @@
         private System.Windows.Forms.TextBox TXTconsult;
         private System.Windows.Forms.Button BUTcons;
         private System.Windows.Forms.Button BUTregras;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
 }

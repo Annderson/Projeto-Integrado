@@ -139,6 +139,8 @@
             this.B10 = new System.Windows.Forms.Button();
             this.B1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.GRBsorteio.SuspendLayout();
             this.SuspendLayout();
@@ -1226,7 +1228,7 @@
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(28, 22);
             this.B2.TabIndex = 52;
-            this.B2.Text = "2";
+            this.B2.Text = "02";
             this.B2.UseVisualStyleBackColor = true;
             this.B2.Click += new System.EventHandler(this.timer1_Tick);
             // 
@@ -1237,7 +1239,7 @@
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(28, 22);
             this.B3.TabIndex = 51;
-            this.B3.Text = "3";
+            this.B3.Text = "03";
             this.B3.UseVisualStyleBackColor = true;
             // 
             // B4
@@ -1247,7 +1249,7 @@
             this.B4.Name = "B4";
             this.B4.Size = new System.Drawing.Size(28, 22);
             this.B4.TabIndex = 50;
-            this.B4.Text = "4";
+            this.B4.Text = "04";
             this.B4.UseVisualStyleBackColor = true;
             // 
             // B5
@@ -1257,7 +1259,7 @@
             this.B5.Name = "B5";
             this.B5.Size = new System.Drawing.Size(28, 22);
             this.B5.TabIndex = 49;
-            this.B5.Text = "5";
+            this.B5.Text = "05";
             this.B5.UseVisualStyleBackColor = true;
             // 
             // B6
@@ -1267,7 +1269,7 @@
             this.B6.Name = "B6";
             this.B6.Size = new System.Drawing.Size(28, 22);
             this.B6.TabIndex = 48;
-            this.B6.Text = "6";
+            this.B6.Text = "06";
             this.B6.UseVisualStyleBackColor = true;
             // 
             // B7
@@ -1277,7 +1279,7 @@
             this.B7.Name = "B7";
             this.B7.Size = new System.Drawing.Size(28, 22);
             this.B7.TabIndex = 47;
-            this.B7.Text = "7";
+            this.B7.Text = "07";
             this.B7.UseVisualStyleBackColor = true;
             // 
             // B9
@@ -1287,7 +1289,7 @@
             this.B9.Name = "B9";
             this.B9.Size = new System.Drawing.Size(28, 22);
             this.B9.TabIndex = 46;
-            this.B9.Text = "9";
+            this.B9.Text = "09";
             this.B9.UseVisualStyleBackColor = true;
             // 
             // B8
@@ -1297,7 +1299,7 @@
             this.B8.Name = "B8";
             this.B8.Size = new System.Drawing.Size(28, 22);
             this.B8.TabIndex = 45;
-            this.B8.Text = "8";
+            this.B8.Text = "08";
             this.B8.UseVisualStyleBackColor = true;
             // 
             // B10
@@ -1317,7 +1319,7 @@
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(28, 22);
             this.B1.TabIndex = 43;
-            this.B1.Text = "1";
+            this.B1.Text = "01";
             this.B1.UseVisualStyleBackColor = true;
             this.B1.Click += new System.EventHandler(this.timer1_Tick);
             // 
@@ -1327,11 +1329,31 @@
             this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(202, 396);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Limpar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(443, 395);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Apostar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Teste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 431);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.TXTsortiados);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BUTstop);
@@ -1462,6 +1484,8 @@
         public System.Windows.Forms.Button B10;
         public System.Windows.Forms.Button B1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
 
 
     }

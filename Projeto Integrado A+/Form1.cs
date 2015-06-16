@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,15 +16,15 @@ namespace Projeto_Integrado_A_
     {
         private EndPoint endPoint;
         int c;
-                
+
         public Projeto_Integrado_A_v2()
         {
             InitializeComponent();
-            
-            
+
+
 
             //Botões Validar Aposta e Limpar ficarão habilitados somente quando necessário.
-            
+
             BUTvap.Enabled = false;
             BUTlimp.Enabled = false;
 
@@ -88,6 +89,8 @@ namespace Projeto_Integrado_A_
         {
             Button cmd = (Button)sender;
 
+            var protocolosJogados = ListaProtocolos();
+            int qtosJogados = protocolosJogados.Count();
 
             int qna = Convert.ToInt32(TXTent.Text.Replace(" ", "").Length / 2), cs = 0, cs2 = 2;
 
@@ -96,207 +99,14 @@ namespace Projeto_Integrado_A_
             string rt = "";   //rt - rotulo para armazenar números e times escolhidos.
 
 
-            switch(cmd.AccessibleDescription)
+            switch (cmd.AccessibleDescription)
             {
-                case "V":        
-
-
-            //verifica a quais times pertencem os números apostados, concatena os números e os times 
-            //escolhidos em uma string para uso posterior, printar o recibo.            
-
-                    rt = "";
-            for (c = 0; c < qna; c++)
-            {
-                ne[c] = Convert.ToInt32(TXTent.Text.Substring(cs, cs2));
-                cs = cs + 3; // verificar se funciona com cs +=3;     
-
-                if(ne[c] >= 1 && ne[c] <=4)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Vasco da Gama\n";
-                }
-                else if(ne[c] > 4 && ne[c] <= 8)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Atletico Paranaense\n";
-                }
-                else if (ne[c] > 8 && ne[c] <= 12)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Bahia\n";
-                }
-                else if (ne[c] > 12 && ne[c] <= 16)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Botafogo\n";
-                }
-                else if (ne[c] > 16 && ne[c] <= 20)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Ceara\n";
-                }
-                else if (ne[c] > 20 && ne[c] <= 24)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Corinthians\n";
-                }
-                else if (ne[c] > 24 && ne[c] <= 28)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Coritiba\n";
-                }
-                else if (ne[c] > 28 && ne[c] <= 32)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Cruzeiro\n";
-                }
-                else if (ne[c] > 32 && ne[c] <= 36)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Flamengo\n";
-                }
-                else if (ne[c] > 36 && ne[c] <= 40)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Fluminense\n";
-                }
-                else if (ne[c] > 40 && ne[c] <= 44)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Fortaleza\n";
-                }
-                else if (ne[c] > 44 && ne[c] <= 48)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Goias\n";
-                }
-                else if (ne[c] > 48 && ne[c] <= 52)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Gremio\n";
-                }
-                else if (ne[c] > 52 && ne[c] <= 56)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Guarani\n";
-                }
-                else if (ne[c] > 56 && ne[c] <= 60)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Internacional\n";
-                }
-                else if (ne[c] > 60 && ne[c] <= 64)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Nautico\n";
-                }
-                else if (ne[c] > 64 && ne[c] <= 68)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Palmeiras\n";
-                }
-                else if (ne[c] > 68 && ne[c] <= 72)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Parana Clube\n";
-                }
-                else if (ne[c] > 72 && ne[c] <= 76)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Ponte Preta\n";
-                }
-                else if (ne[c] > 76 && ne[c] <= 80)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Santa Cruz\n";
-                }
-                else if (ne[c] > 80 && ne[c] <= 84)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Santos\n";
-                }
-                else if (ne[c] > 84 && ne[c] <= 88)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Sao Paulo\n";
-                }
-                else if (ne[c] > 88 && ne[c] <= 92)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Sport\n";
-                }
-                else if (ne[c] > 92 && ne[c] <= 96)
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Vasco da Gama";
-                }
-                else if ((ne[c] > 96 && ne[c] <= 99) || (ne[c] == 0))
-                {
-                    vrg[c] = 1;
-                    rt = rt + ne[c] + " - Vitoria";
-                }
-            }
-
-
-            //ordena os números escolhidos para realizar comparação
-
-            System.Array.Sort(ne);
-
-
-            //compara se há números repetidos entre os escolhidos e verifica se foram escolhidos menos de
-            //cinco times diferentes
-
-            int qta = vrg.Sum();   //qta - quantidade de times apostados
-
-            for (c = 0; c < qna-1; c++)
-            {
-                if (ne[c] == ne[c+1])
-                {
-
+                case "V":
+                    VerificaGravaAposta(TXTent.Text);
                     BUTlimp.PerformClick();
-                    MessageBox.Show("O jogo Mega Time não aceita números repetidos. \n Refaça sua aposta.");   
-                    
-                }
-                else if (qta < 5)
-                {
-                    BUTlimp.PerformClick();
-                    MessageBox.Show("É necessário escolher números de ao menos cinco times diferentes. \n Refaça sua aposta.");
-                }
-            }
+                    break;
 
-
-            //realiza o calculo do valor da aposta de acordo com as especificações da regra do jogo
-
-            double va = 0;
-
-            if (qna > 10 && qna <= 15)
-            {
-                va = (qna - 10) * 0.75;
-            }
-            else if (qna > 15 && qna <= 19)
-            {
-                va = 8.75 + ((qna - 15) * 3.00);
-            }
-            else if (qna == 20)
-                va = 27.75;
-
-            if (qta > 5)
-            va = va + (qta - 5 * 1.25);
-
-            //armazenamento da aposta na API e impressão do recibo
-
-            string txtTratado = TXTent.Text.Split(' ').Select(str => int.Parse(str).ToString()).Aggregate((str, acc) => str + "," + acc);
-            long protocolo = endPoint.gravarAposta(txtTratado);
-            string recibo;
-
-            recibo = "Mega Time\n\n" + "Nº do protocolo: " + protocolo + "\n\nDezenas e times escolhidos:\n" + "===================\n" + rt + "===================\n\n" + "Valor da aposta: " + va;
-            MessageBox.Show(recibo);
-            BUTlimp.PerformClick();
-
-                break;
-
-
-                    //limpar todas as informações inseridas pelo usuário
+                //limpar todas as informações inseridas pelo usuário
 
                 case "L":
                     {
@@ -306,12 +116,11 @@ namespace Projeto_Integrado_A_
                         BUTvap.Enabled = false;
                         TXTent.Focus();
                         TXTconsult.Text = "";
-                        protocolo = 0;
                         break;
                     }
 
 
-                    //realiza consutla de protocolo e verifica valor do premio, caso se aplique
+                //realiza consutla de protocolo e verifica valor do premio, caso se aplique
 
                 case "C":
                     {
@@ -320,11 +129,12 @@ namespace Projeto_Integrado_A_
                         //nd = número de uma determinada dezena, c2 - contador auxiliar, cs3 - contador auxiliar
                         string da, ds, ts;
                         //da - dezenas da aposta, ds - dezenas sorteados, ts - time sorteado
-                        
-                        //tap = times apostados
 
-                        long.TryParse(TXTconsult.Text, out protocolo);
-                        protocolo = 0;
+                        //tap = times apostados
+                        long protocolo;
+                        if (!long.TryParse(TXTconsult.Text, out protocolo))
+                            protocolo = 0;
+
                         //qd = endPoint.obterQuantidadeDezenasApostadas(protocolo);
                         da = endPoint.obterTodasDezenasApostadas(protocolo); // Replace here!!!
                         if (da == null)
@@ -339,14 +149,14 @@ namespace Projeto_Integrado_A_
                         string[] daSplit = da.Split(',');
                         string[] dsSplit = ds.Split(',');
                         qd = daSplit.Count();
-                        
+
                         string[] tap = new string[qd];
 
                         dsCount = dsSplit.Count();
 
                         //verifica os acertos da aposta
 
-                        for (c2 = 0; c2 < dsCount; c2++ )
+                        for (c2 = 0; c2 < dsCount; c2++)
                         {
                             for (c = 0; c < qd; c++)
                             {
@@ -491,20 +301,20 @@ namespace Projeto_Integrado_A_
                         }
 
 
-                        va = 0;
+                        double va = 0;
                         if (a >= 3)
                         {
                             va = endPoint.obterPremioPorAcertos(a);
-                                                                         
+
                             for (c = 0; c < qd; c++)
                                 if (ts == tap[c])
                                     va = va + 5.00;
                         }
 
-                        recibo = "Mega Time\n\nNº do protocolo: " + protocolo + "\n\nDezenas e times apostados:\n===================\n\n" + rt + "Nº de acertos: " + a + "\n\nPremio: R$" + va;
+                        string recibo = "Mega Time\n\nNº do protocolo: " + protocolo + "\n\nDezenas e times apostados:\n===================\n\n" + rt + "Nº de acertos: " + a + "\n\nPremio: R$" + va;
                         MessageBox.Show(recibo);
-
-                    break;
+                        TXTconsult.Clear();
+                        break;
                     }
 
 
@@ -527,6 +337,234 @@ namespace Projeto_Integrado_A_
         {
             Form Sorteio = new Projeto_Integrado_A_.Teste();
             Sorteio.ShowDialog();
+        }
+
+        public static void VerificaGravaAposta(string aposta)
+        {
+            aposta = aposta.Trim();
+            int qna = Convert.ToInt32(aposta.Replace(" ", "").Length / 2), cs = 0, cs2 = 2;
+
+            int[] ne = new int[qna];   //ne - números escolhidos.
+            int[] vrg = new int[qna];  //vrg - verificador da regra dos grupos.    
+            string rt = "";   //rt - rotulo para armazenar números e times escolhidos.
+
+            //verifica a quais times pertencem os números apostados, concatena os números e os times 
+            //escolhidos em uma string para uso posterior, printar o recibo.            
+
+            rt = "";
+            for (int c = 0; c < qna; c++)
+            {
+                ne[c] = Convert.ToInt32(aposta.Substring(cs, cs2));
+                cs = cs + 3; // verificar se funciona com cs +=3;     
+
+                if (ne[c] >= 1 && ne[c] <= 4)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Vasco da Gama\n";
+                }
+                else if (ne[c] > 4 && ne[c] <= 8)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Atletico Paranaense\n";
+                }
+                else if (ne[c] > 8 && ne[c] <= 12)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Bahia\n";
+                }
+                else if (ne[c] > 12 && ne[c] <= 16)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Botafogo\n";
+                }
+                else if (ne[c] > 16 && ne[c] <= 20)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Ceara\n";
+                }
+                else if (ne[c] > 20 && ne[c] <= 24)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Corinthians\n";
+                }
+                else if (ne[c] > 24 && ne[c] <= 28)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Coritiba\n";
+                }
+                else if (ne[c] > 28 && ne[c] <= 32)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Cruzeiro\n";
+                }
+                else if (ne[c] > 32 && ne[c] <= 36)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Flamengo\n";
+                }
+                else if (ne[c] > 36 && ne[c] <= 40)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Fluminense\n";
+                }
+                else if (ne[c] > 40 && ne[c] <= 44)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Fortaleza\n";
+                }
+                else if (ne[c] > 44 && ne[c] <= 48)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Goias\n";
+                }
+                else if (ne[c] > 48 && ne[c] <= 52)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Gremio\n";
+                }
+                else if (ne[c] > 52 && ne[c] <= 56)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Guarani\n";
+                }
+                else if (ne[c] > 56 && ne[c] <= 60)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Internacional\n";
+                }
+                else if (ne[c] > 60 && ne[c] <= 64)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Nautico\n";
+                }
+                else if (ne[c] > 64 && ne[c] <= 68)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Palmeiras\n";
+                }
+                else if (ne[c] > 68 && ne[c] <= 72)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Parana Clube\n";
+                }
+                else if (ne[c] > 72 && ne[c] <= 76)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Ponte Preta\n";
+                }
+                else if (ne[c] > 76 && ne[c] <= 80)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Santa Cruz\n";
+                }
+                else if (ne[c] > 80 && ne[c] <= 84)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Santos\n";
+                }
+                else if (ne[c] > 84 && ne[c] <= 88)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Sao Paulo\n";
+                }
+                else if (ne[c] > 88 && ne[c] <= 92)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Sport\n";
+                }
+                else if (ne[c] > 92 && ne[c] <= 96)
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Vasco da Gama\n";
+                }
+                else if ((ne[c] > 96 && ne[c] <= 99) || (ne[c] == 0))
+                {
+                    vrg[c] = 1;
+                    rt = rt + ne[c] + " - Vitoria\n";
+                }
+            }
+
+
+            //ordena os números escolhidos para realizar comparação
+
+            System.Array.Sort(ne);
+
+
+            //compara se há números repetidos entre os escolhidos e verifica se foram escolhidos menos de
+            //cinco times diferentes
+
+            int qta = vrg.Sum();   //qta - quantidade de times apostados
+
+            for (int c = 0; c < qna - 1; c++)
+            {
+                if (ne[c] == ne[c + 1])
+                {
+                    MessageBox.Show("O jogo Mega Time não aceita números repetidos. \n Refaça sua aposta.");
+                    return;
+                }
+                else if (qta < 5)
+                {
+                    MessageBox.Show("É necessário escolher números de ao menos cinco times diferentes. \n Refaça sua aposta.");
+                    return;
+                }
+            }
+
+
+            //realiza o calculo do valor da aposta de acordo com as especificações da regra do jogo
+
+            double va = 0;
+
+            if (qna > 10 && qna <= 15)
+            {
+                va = (qna - 10) * 0.75;
+            }
+            else if (qna > 15 && qna <= 19)
+            {
+                va = 8.75 + ((qna - 15) * 3.00);
+            }
+            else if (qna == 20)
+                va = 27.75;
+
+            if (qta > 5)
+                va = va + (qta - 5 * 1.25);
+
+            //armazenamento da aposta na API e impressão do recibo
+
+            string txtTratado = aposta.Split(' ').Select(str => int.Parse(str).ToString()).Aggregate((str, acc) => str + "," + acc);
+            var endPoint = new EndPoint();
+            long protocolo = endPoint.gravarAposta(txtTratado);
+            string recibo;
+
+            recibo = "Mega Time\n\n" + "Nº do protocolo: " + protocolo + "\n\nDezenas e times escolhidos:\n" + "===================\n" + rt + "===================\n\n" + "Valor da aposta: " + va;
+            MessageBox.Show(recibo);
+            //BUTlimp.PerformClick();
+
+        }
+
+        public static long[] ListaProtocolos()
+        {
+            List<long> Protocolos = new List<long>();
+
+            if (File.Exists("c:\\temp\\apostas.txt"))
+            {
+                System.IO.StreamReader file =
+                    new System.IO.StreamReader("c:\\temp\\apostas.txt");
+
+                string line;
+                while ((line = file.ReadLine()) != null)
+                {
+                    long protocolo;
+                    string protoStr = line.Split('=').First();
+                    if (protoStr != null && long.TryParse(protoStr, out protocolo))
+                    {
+                        Protocolos.Add(protocolo);
+                    }
+                }
+
+                file.Close();
+            }
+
+            return Protocolos.ToArray();
         }
     }
 }
