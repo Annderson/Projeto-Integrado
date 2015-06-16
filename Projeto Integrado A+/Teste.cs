@@ -37,14 +37,19 @@ namespace Projeto_Integrado_A_
 
             Sorteados.Add(S);
 
-            // Para de sortear quanto for menor ou igual a 20
+            // Para de sortear quando tem 20
             if (Sorteados.Count() >= 20)
-                timer1.Stop();
+            {
+                BUTstop.PerformClick();
+            }
 
             if (Sorteados.Count() >= 10)
             {
-                BUTstop.Enabled = true;
-                button1.Enabled = true;
+                BUTapost.Enabled = true;
+            }
+            else
+            {
+                BUTapost.Enabled = false;
             }
 
 
@@ -70,27 +75,31 @@ namespace Projeto_Integrado_A_
 
         private void BUTstar_Click(object sender, EventArgs e)
         {
+            if (Sorteados.Count >= 20)
+                BUTlimp.PerformClick();
 
-            timer1.Enabled = true;
+            timer1.Start();
         }
 
         private void BUTstop_Click(object sender, EventArgs e)
         {
-            timer1.Enabled = false;
+            timer1.Stop();
+
+            if (Sorteados.Count >= 10)
+                BUTapost.Enabled = true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BUTapost_Click(object sender, EventArgs e)
         {
             Projeto_Integrado_A_v2.VerificaGravaAposta(TXTsortiados.Text);
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BUTlimp_Click(object sender, EventArgs e)
         {
             TXTsortiados.Clear();
             Sorteados.Clear();
-            BUTstop.Enabled = false;
-            button1.Enabled = false;
+            BUTapost.Enabled = false;
 
             foreach (var btn in BotoesDeNumero)
                 btn.BackColor = BUTstop.BackColor;
