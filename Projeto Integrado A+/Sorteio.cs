@@ -37,21 +37,16 @@ namespace Projeto_Integrado_A_
 
             Sorteados.Add(S);
 
+            if (Sorteados.Count() > 10)
+                BUTstop.BackColor = Color.Green;
+            else
+                BUTstop.BackColor = Color.Red;
+
             // Para de sortear quando tem 20
             if (Sorteados.Count() >= 20)
             {
                 BUTstop.PerformClick();
             }
-
-            if (Sorteados.Count() >= 10)
-            {
-                BUTapost.Enabled = true;
-            }
-            else
-            {
-                BUTapost.Enabled = false;
-            }
-
 
             // Marca a cor no botão
 
@@ -59,7 +54,7 @@ namespace Projeto_Integrado_A_
             {
                 if (int.Parse(but.Text) == S)
                 {
-                    but.BackColor = Color.Red;
+                    but.BackColor = Color.Green;
                 }
             }
 
@@ -78,13 +73,14 @@ namespace Projeto_Integrado_A_
             if (Sorteados.Count >= 20)
                 BUTlimp.PerformClick();
 
+            BUTapost.Enabled = false;
             timer1.Start();
         }
 
         private void BUTstop_Click(object sender, EventArgs e)
         {
             timer1.Stop();
-
+            
             if (Sorteados.Count >= 10)
                 BUTapost.Enabled = true;
         }
@@ -100,9 +96,10 @@ namespace Projeto_Integrado_A_
             TXTsortiados.Clear();
             Sorteados.Clear();
             BUTapost.Enabled = false;
+            BUTstop.BackColor = BUTstar.BackColor;
 
             foreach (var btn in BotoesDeNumero)
-                btn.BackColor = BUTstop.BackColor;
+                btn.BackColor = BUTstar.BackColor;
         }
 
         private void BUTaposte_Click(object sender, EventArgs e)
