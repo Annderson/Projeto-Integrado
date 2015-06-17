@@ -37,7 +37,7 @@ namespace Projeto_Integrado_A_
 
             Sorteados.Add(S);
 
-            if (Sorteados.Count() > 10)
+            if (Sorteados.Count() >= 10)
                 BUTstop.BackColor = Color.Green;
             else
                 BUTstop.BackColor = Color.Red;

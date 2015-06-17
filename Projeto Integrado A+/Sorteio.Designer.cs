@@ -1415,7 +1415,7 @@
             this.BUTapost.UseVisualStyleBackColor = true;
             this.BUTapost.Click += new System.EventHandler(this.BUTapost_Click);
             // 
-            // Teste
+            // Sorteio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1427,7 +1427,11 @@
             this.Controls.Add(this.BUTstop);
             this.Controls.Add(this.BUTstar);
             this.Controls.Add(this.GRBsorteio);
-            this.Name = "Teste";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Sorteio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tabela de sorteio";
             this.Load += new System.EventHandler(this.Sorteio_Load);
             this.GRBsorteio.ResumeLayout(false);

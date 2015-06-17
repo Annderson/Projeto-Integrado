@@ -38,6 +38,7 @@
             this.BUTcons = new System.Windows.Forms.Button();
             this.BUTregras = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.BUTlistaapst = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBLnum
@@ -62,7 +63,7 @@
             this.TXTent.Location = new System.Drawing.Point(50, 474);
             this.TXTent.MaxLength = 59;
             this.TXTent.Name = "TXTent";
-            this.TXTent.Size = new System.Drawing.Size(348, 22);
+            this.TXTent.Size = new System.Drawing.Size(350, 22);
             this.TXTent.TabIndex = 7;
             this.TXTent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTent_KeyPress);
             // 
@@ -71,12 +72,12 @@
             this.BUTvap.AccessibleDescription = "V";
             this.BUTvap.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTvap.ForeColor = System.Drawing.Color.Blue;
-            this.BUTvap.Location = new System.Drawing.Point(50, 502);
+            this.BUTvap.Location = new System.Drawing.Point(50, 503);
             this.BUTvap.Name = "BUTvap";
-            this.BUTvap.Size = new System.Drawing.Size(115, 23);
+            this.BUTvap.Size = new System.Drawing.Size(115, 24);
             this.BUTvap.TabIndex = 8;
             this.BUTvap.Tag = "";
-            this.BUTvap.Text = "Validar aposta.";
+            this.BUTvap.Text = "Validar aposta";
             this.BUTvap.UseVisualStyleBackColor = true;
             this.BUTvap.Click += new System.EventHandler(this.Processamento_Click);
             // 
@@ -85,9 +86,9 @@
             this.BUTlimp.AccessibleDescription = "L";
             this.BUTlimp.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTlimp.ForeColor = System.Drawing.Color.Blue;
-            this.BUTlimp.Location = new System.Drawing.Point(186, 501);
+            this.BUTlimp.Location = new System.Drawing.Point(171, 502);
             this.BUTlimp.Name = "BUTlimp";
-            this.BUTlimp.Size = new System.Drawing.Size(116, 24);
+            this.BUTlimp.Size = new System.Drawing.Size(73, 25);
             this.BUTlimp.TabIndex = 9;
             this.BUTlimp.Text = "Limpar";
             this.BUTlimp.UseVisualStyleBackColor = true;
@@ -118,7 +119,7 @@
             this.BUTcons.AccessibleDescription = "C";
             this.BUTcons.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTcons.ForeColor = System.Drawing.Color.Blue;
-            this.BUTcons.Location = new System.Drawing.Point(424, 501);
+            this.BUTcons.Location = new System.Drawing.Point(424, 503);
             this.BUTcons.Name = "BUTcons";
             this.BUTcons.Size = new System.Drawing.Size(120, 24);
             this.BUTcons.TabIndex = 14;
@@ -132,9 +133,9 @@
             this.BUTregras.BackColor = System.Drawing.SystemColors.Control;
             this.BUTregras.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTregras.ForeColor = System.Drawing.Color.Blue;
-            this.BUTregras.Location = new System.Drawing.Point(551, 502);
+            this.BUTregras.Location = new System.Drawing.Point(324, 503);
             this.BUTregras.Name = "BUTregras";
-            this.BUTregras.Size = new System.Drawing.Size(98, 23);
+            this.BUTregras.Size = new System.Drawing.Size(76, 24);
             this.BUTregras.TabIndex = 15;
             this.BUTregras.Text = "Regras";
             this.BUTregras.UseVisualStyleBackColor = false;
@@ -144,13 +145,26 @@
             // 
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button2.Location = new System.Drawing.Point(323, 502);
+            this.button2.Location = new System.Drawing.Point(250, 503);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(68, 24);
             this.button2.TabIndex = 17;
             this.button2.Text = "Sortear";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // BUTlistaapst
+            // 
+            this.BUTlistaapst.AccessibleDescription = "C";
+            this.BUTlistaapst.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BUTlistaapst.ForeColor = System.Drawing.Color.Blue;
+            this.BUTlistaapst.Location = new System.Drawing.Point(550, 503);
+            this.BUTlistaapst.Name = "BUTlistaapst";
+            this.BUTlistaapst.Size = new System.Drawing.Size(99, 24);
+            this.BUTlistaapst.TabIndex = 18;
+            this.BUTlistaapst.Text = "Ver Todas";
+            this.BUTlistaapst.UseVisualStyleBackColor = true;
+            this.BUTlistaapst.Click += new System.EventHandler(this.BUTlistaapst_Click);
             // 
             // Projeto_Integrado_A_v2
             // 
@@ -159,6 +173,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(695, 537);
+            this.Controls.Add(this.BUTlistaapst);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.BUTregras);
             this.Controls.Add(this.BUTcons);
@@ -187,6 +202,7 @@
         private System.Windows.Forms.Button BUTcons;
         private System.Windows.Forms.Button BUTregras;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BUTlistaapst;
     }
 }
 
