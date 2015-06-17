@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Projeto_Integrado_A_
 {
-    public partial class Sorteio2 : Form
+    public partial class ListaApostas : Form
     {
         List<int> Sortiados;
-        public Sorteio2()
+        public ListaApostas()
         {
             InitializeComponent();
             Sortiados = new List<int>();

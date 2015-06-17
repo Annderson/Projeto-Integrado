@@ -330,13 +330,13 @@ namespace Projeto_Integrado_A_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form Sorteio2 = new Projeto_Integrado_A_.Sorteio2();
+            Form Sorteio2 = new Projeto_Integrado_A_.ListaApostas();
             Sorteio2.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form Sorteio = new Projeto_Integrado_A_.Teste();
+            Form Sorteio = new Projeto_Integrado_A_.Sorteio();
             Sorteio.ShowDialog();
         }
 

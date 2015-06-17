@@ -11,13 +11,13 @@ using Projeto_Integrado_A_;
 
 namespace Projeto_Integrado_A_
 {
-    public partial class Teste : Form
+    public partial class Sorteio : Form
     {
 
         List<int> Sorteados;
         IEnumerable<Button> BotoesDeNumero;
 
-        public Teste()
+        public Sorteio()
         {
             InitializeComponent();
             Sorteados = new List<int>();

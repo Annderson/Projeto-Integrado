@@ -61,17 +61,17 @@
     <Compile Include="Regras.Designer.cs">
       <DependentUpon>Regras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teste.cs">
+    <Compile Include="Sorteio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teste.Designer.cs">
-      <DependentUpon>Teste.cs</DependentUpon>
+    <Compile Include="Sorteio.Designer.cs">
+      <DependentUpon>Sorteio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sorteio2.cs">
+    <Compile Include="ListaApostas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sorteio2.Designer.cs">
-      <DependentUpon>Sorteio2.cs</DependentUpon>
+    <Compile Include="ListaApostas.Designer.cs">
+      <DependentUpon>ListaApostas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -89,11 +89,11 @@
     <EmbeddedResource Include="Regras.resx">
       <DependentUpon>Regras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Teste.resx">
-      <DependentUpon>Teste.cs</DependentUpon>
+    <EmbeddedResource Include="Sorteio.resx">
+      <DependentUpon>Sorteio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sorteio2.resx">
-      <DependentUpon>Sorteio2.cs</DependentUpon>
+    <EmbeddedResource Include="ListaApostas.resx">
+      <DependentUpon>ListaApostas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
