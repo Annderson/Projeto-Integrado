@@ -119,7 +119,7 @@
             this.BUTcons.AccessibleDescription = "C";
             this.BUTcons.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTcons.ForeColor = System.Drawing.Color.Blue;
-            this.BUTcons.Location = new System.Drawing.Point(424, 503);
+            this.BUTcons.Location = new System.Drawing.Point(529, 503);
             this.BUTcons.Name = "BUTcons";
             this.BUTcons.Size = new System.Drawing.Size(120, 24);
             this.BUTcons.TabIndex = 14;
@@ -158,7 +158,7 @@
             this.BUTlistaapst.AccessibleDescription = "C";
             this.BUTlistaapst.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BUTlistaapst.ForeColor = System.Drawing.Color.Blue;
-            this.BUTlistaapst.Location = new System.Drawing.Point(550, 503);
+            this.BUTlistaapst.Location = new System.Drawing.Point(424, 503);
             this.BUTlistaapst.Name = "BUTlistaapst";
             this.BUTlistaapst.Size = new System.Drawing.Size(99, 24);
             this.BUTlistaapst.TabIndex = 18;

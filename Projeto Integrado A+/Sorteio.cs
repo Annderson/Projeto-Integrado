@@ -37,7 +37,7 @@ namespace Projeto_Integrado_A_
 
             Sorteados.Add(S);
 
-            if (Sorteados.Count() >= 10)
+            if (ChecaSorteados())
                 BUTstop.BackColor = Color.Green;
             else
                 BUTstop.BackColor = Color.Red;
@@ -80,8 +80,8 @@ namespace Projeto_Integrado_A_
         private void BUTstop_Click(object sender, EventArgs e)
         {
             timer1.Stop();
-            
-            if (Sorteados.Count >= 10)
+
+            if (ChecaSorteados())
                 BUTapost.Enabled = true;
         }
 
@@ -108,6 +108,21 @@ namespace Projeto_Integrado_A_
             this.Close();
         }
 
+        private bool ChecaSorteados()
+        {
+            if (Sorteados.Count < 10)
+                return false;
+
+            var TimesSorteados = new List<int>();
+            foreach (var n in Sorteados)
+            {
+                var timeIdx = Projeto_Integrado_A_v2.CalculaIndiceDoTime(n);
+                if (!TimesSorteados.Contains(timeIdx))
+                    TimesSorteados.Add(timeIdx);
+            }
+
+            return TimesSorteados.Count >= 5;
+        }
 
     }
 }

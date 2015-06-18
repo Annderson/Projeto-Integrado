@@ -39,6 +39,16 @@
             label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // label7
+            // 
+            label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label7.ForeColor = System.Drawing.Color.Blue;
+            label7.Location = new System.Drawing.Point(32, 241);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(466, 27);
+            label7.TabIndex = 6;
+            label7.Text = "d. Acrescimo de R$1.25 para cada time escolhido além do quinto";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -101,16 +111,6 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "2. As dezenas devem corresponder a pelo menos cinco times diferentes.";
             // 
-            // label7
-            // 
-            label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label7.ForeColor = System.Drawing.Color.Blue;
-            label7.Location = new System.Drawing.Point(32, 241);
-            label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(466, 27);
-            label7.TabIndex = 6;
-            label7.Text = "d. Acrescimo de R$1.25 para cada time escolhido além do quinto";
-            // 
             // butFechar
             // 
             this.butFechar.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -143,6 +143,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(520, 360);
             this.Name = "Regras";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Regras";
             this.ResumeLayout(false);
             this.PerformLayout();
