@@ -1,0 +1,44 @@
+package org.persistencia;
+
+import java.sql.SQLException;
+
+import org.bdo.Valor;
+import org.conexao.MeuPreparedStatement;
+import org.conexao.MeuResultSet;
+
+public class Valores {
+	
+	protected MeuPreparedStatement stm;
+	
+	public Valores() throws Exception{
+		try{
+			String drv = "com.mysql.jdbc.Driver",
+					   scon = "jdbc:mysql://localhost/projeto",
+					   usr = "root",
+					   snh = "4412";
+			stm = new MeuPreparedStatement(drv, scon, usr, snh);
+		}catch (SQLException e){
+			throw new Exception("Erro ao conectar ao banco");
+		}
+	}
+	
+	public Valor consulta (int idCartela){
+		
+		try {
+			Valores vl;
+			String sql = "Select *from Combinacoes where idCartela=?";
+			
+			stm.prepareStatement(sql);
+			stm.setInt(1, idCartela);
+			MeuResultSet rs = (MeuResultSet)stm.executeQuery();
+			if (rs.next()){
+				vl = new Valor(rs.getInt("id"), rs.getInt("linha"), rs.getInt("coluna"),
+						       rs.getInt("valor"), )
+			}
+			return vl;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+}

@@ -1,0 +1,75 @@
+package org.servidor;
+
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Random;
+import org.jogador.Jogador;
+
+public class Jogo extends Thread {
+
+	protected ArrayList<Integer> numerosSorteados;
+	protected ArrayList<Jogador> jogador = new ArrayList<Jogador>();
+	protected int index;
+	
+	public Jogo() throws Exception{
+		numerosSorteados = new ArrayList<Integer>();
+		this.index = 0;
+	}
+
+	public void addJogador(Jogador jogador) throws Exception {
+		if (jogador == null)
+			throw new Exception("Jogador não fornecido");
+		
+		this.jogador.add(jogador);
+		this.index ++;
+	}
+	
+	public void removeJogador(Jogador jogador) throws Exception{
+		if (jogador == null)
+			throw new Exception("Jogador não foi fornecido");
+		
+		this.jogador.remove(jogador);
+		this.index --;
+	}
+
+	private int numeroSorteado(){
+		int pegue = 0;
+		Random rom = new Random();	
+		
+		do{
+			
+			pegue = rom.nextInt(76);
+			
+		}while(numerosSorteados.contains(pegue));
+		
+		this.numerosSorteados.add(pegue);
+		
+		return pegue;
+    }
+    
+    public void run(){
+    	
+    	String elemento;
+    	String recebe = null;
+    	try {
+    		while(true){
+    			
+    			Thread.sleep(5*1000);
+    			
+    			elemento ="" + numeroSorteado();
+    	    	System.out.println(elemento);
+
+        		for (int i =0; i<this.index;i++){
+    				this.jogador.get(i).envie(elemento);
+        		}	
+        		
+    		}
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}	
+			
+   
+    	
+    }
+}

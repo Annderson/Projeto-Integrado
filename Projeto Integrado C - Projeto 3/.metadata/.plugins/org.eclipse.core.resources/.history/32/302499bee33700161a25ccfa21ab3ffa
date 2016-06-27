@@ -1,0 +1,78 @@
+package org.cartela;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class TelaInicial extends JFrame {
+
+	protected JPanel painel;
+	protected JButton btnEntrar = new JButton("Entrar");
+	protected JLabel lblNome = new JLabel("Nome :");
+	protected JTextField txtNome = new JTextField();
+	
+	public TelaInicial() {
+		
+		super("Tela Inicial");
+		this.setSize(400, 400);
+		this.setResizable(false);
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
+		
+		painel = new JPanel();
+		
+		painel.setLayout(null);
+		this.getContentPane().add(painel);
+		
+		adicionarComponentes();
+		mapearComponentes();
+		trateEvento();
+		
+		painel.repaint();
+	}
+
+	private void trateEvento() {
+		
+		btnEntrar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					TelaInicial.this.dispose();
+					new Cartela();
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+		
+	}
+
+	private void mapearComponentes() {
+		
+		painel.setBackground(new Color(176, 224, 230));
+		
+		btnEntrar.setForeground(new Color(255, 255, 255));
+		btnEntrar.setBackground(new Color(0, 0, 128));
+		btnEntrar.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnEntrar.setBounds(149, 230, 91, 33);
+		
+		txtNome.setColumns(20);
+		txtNome.setBounds(124, 112, 195, 27);
+		
+		lblNome.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblNome.setBounds(60, 120, 65, 14);
+	}
+
+	private void adicionarComponentes() {
+		
+		painel.add(btnEntrar);
+		painel.add(lblNome);
+		painel.add(txtNome);
+		
+	}
+}

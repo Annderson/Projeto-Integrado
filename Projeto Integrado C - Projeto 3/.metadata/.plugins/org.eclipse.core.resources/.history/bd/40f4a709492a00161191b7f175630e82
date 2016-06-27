@@ -1,0 +1,160 @@
+package org.cartela;
+
+import java.awt.EventQueue;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import java.awt.Color;
+import javax.swing.SwingConstants;
+import java.awt.Font;
+import javax.swing.JTabbedPane;
+
+public class Cartela extends JFrame{
+	
+    protected JPanel painel;
+	protected JLabel lblNumeroSorteado = new JLabel("Numero Sorteado");
+	protected JButton btnBingo = new JButton("Bingo");
+	protected JButton btn10 = new JButton("1-15");
+	protected JButton btn11 = new JButton("1-15");
+	protected JButton btn12 = new JButton("1-15");
+	protected JButton btn13 = new JButton("1-15");
+	protected JButton btn14 = new JButton("1-15");
+	protected JButton btn20 = new JButton("16-30");
+	protected JButton btn30 = new JButton("31-45");
+	protected JButton btn40 = new JButton("46-60");
+	protected JButton btn50 = new JButton("61-75");
+	protected JButton btn21 = new JButton("16-30");
+	protected JButton btn22 = new JButton("16-30");
+	protected JButton btn23 = new JButton("16-30");
+	protected JButton btn24 = new JButton("16-30");
+	protected JButton btn31 = new JButton("31-45");
+	protected JButton btnNulo = new JButton("@");
+	protected JButton btn33 = new JButton("31-45");
+	protected JButton btn34 = new JButton("31-45");
+	protected JButton btn41 = new JButton("46-60");
+	protected JButton btn42 = new JButton("46-60");
+	protected JButton btn43 = new JButton("46-60");
+	protected JButton btn44 = new JButton("46-60");
+	protected JButton btn51 = new JButton("61-75");
+	protected JButton btn52 = new JButton("61-75");
+	protected JButton btn53 = new JButton("61-75");
+	protected JButton btn54 = new JButton("61-75");
+
+
+
+	public Cartela() {
+		super("Cartela");
+		this.setSize(400, 400);
+		this.setResizable(false);
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
+		
+		painel = new JPanel();
+		painel.setLayout(null);
+		getContentPane().add(painel);
+		
+		inserirComponentes();	
+		mapearComponentes();
+		inicializarComponentes();
+		
+		painel.repaint();
+			
+	}
+	
+    public void inserirComponentes() {
+		
+    	painel.add(lblNumeroSorteado);
+	
+		painel.add(btnBingo);
+		
+		painel.add(btn10);
+		painel.add(btn11);
+		painel.add(btn12);	
+		painel.add(btn13);
+		painel.add(btn14);	
+		
+		painel.add(btn20);	
+		painel.add(btn21);	
+		painel.add(btn22);
+		painel.add(btn23);
+		painel.add(btn24);
+		
+		painel.add(btn30);
+		painel.add(btn31);	
+		painel.add(btnNulo);	
+		painel.add(btn33);
+		painel.add(btn34);	
+		
+		painel.add(btn40);
+		painel.add(btn41);
+		painel.add(btn42);
+		painel.add(btn43);
+		painel.add(btn44);	
+		
+		painel.add(btn50);
+		painel.add(btn51);	
+		painel.add(btn52);
+		painel.add(btn53);
+		painel.add(btn54);
+		
+		
+		
+
+	}
+	
+    private void mapearComponentes() {
+    	
+    	lblNumeroSorteado.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblNumeroSorteado.setForeground(new Color(0, 0, 0));
+		lblNumeroSorteado.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNumeroSorteado.setBackground(new Color(0, 200, 200));
+		lblNumeroSorteado.setBounds(129, 11, 122, 28);
+		
+		btnBingo.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnBingo.setBackground(new Color(224, 255, 255));
+		btnBingo.setBounds(140, 332, 99, 28);
+		
+		btnNulo.setForeground(new Color(0, 100, 0));
+		btnNulo.setFont(new Font("Tahoma", Font.BOLD, 20));
+		btnNulo.setBackground(new Color(0, 0, 0));
+		btnNulo.setEnabled(false);
+		btnNulo.setBounds(170, 160, 55, 35);
+		
+		btn10.setBounds(30, 80, 55, 35);
+		btn11.setBounds(30, 120, 55, 35);
+		btn12.setBounds(30, 160, 55, 35);
+		btn13.setBounds(30, 200, 55, 35);
+		btn14.setBounds(30, 240, 55, 35);
+		
+		btn20.setBounds(100, 80, 55, 35);
+		btn21.setBounds(100, 120, 55, 35);
+		btn22.setBounds(100, 160, 55, 35);
+		btn23.setBounds(100, 200, 55, 35);
+		btn24.setBounds(100, 240, 55, 35);
+		
+		btn30.setBounds(170, 80, 55, 35);
+		btn31.setBounds(170, 120, 55, 35);
+		btn33.setBounds(170, 200, 55, 35);
+		btn34.setBounds(170, 240, 55, 35);
+		
+		btn40.setBounds(240, 80, 55, 35);
+		btn41.setBounds(240, 120, 55, 35);
+		btn42.setBounds(240, 160, 55, 35);
+		btn43.setBounds(240, 200, 55, 35);
+		btn44.setBounds(240, 240, 55, 35);
+		
+		btn50.setBounds(310, 80, 55, 35);
+		btn51.setBounds(310, 120, 55, 35);
+		btn52.setBounds(310, 160, 55, 35);
+		btn53.setBounds(310, 200, 55, 35);
+		btn54.setBounds(310, 240, 55, 35);
+		
+	}
+
+	private void inicializarComponentes() {
+		
+		
+	}
+}

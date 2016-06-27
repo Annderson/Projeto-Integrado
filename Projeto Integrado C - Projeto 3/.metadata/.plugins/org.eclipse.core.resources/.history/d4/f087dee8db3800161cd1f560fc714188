@@ -1,0 +1,140 @@
+package org.servidor;
+
+import java.util.ArrayList;
+import java.util.Random;
+import org.jogador.Jogador;
+
+public class Jogo extends Thread {
+
+	protected ArrayList<Integer> numerosSorteados;
+	protected ArrayList<Jogador> jogador;
+	protected int index;
+	
+	public Jogo() throws Exception{
+		
+		jogador = new ArrayList<Jogador>();
+		numerosSorteados = new ArrayList<Integer>();
+		this.index = 0;
+		
+	}
+
+	public void addJogador(Jogador jogador) throws Exception {
+		if (jogador == null)
+			throw new Exception("Jogador não fornecido");
+		
+		this.jogador.add(jogador);
+		this.index ++;
+	}
+	
+	public void removeJogador(Jogador jogador) throws Exception{
+		if (jogador == null)
+			throw new Exception("Jogador não foi fornecido");
+		
+		this.jogador.remove(jogador);
+		this.index --;
+	}
+
+	private int numeroSorteado(){
+		int pegue = 0;
+		Random rom = new Random();	
+		
+		do{
+			
+			pegue = rom.nextInt(76);
+			
+		}while(numerosSorteados.contains(pegue));
+		
+		this.numerosSorteados.add(pegue);
+		
+		return pegue;
+    }
+    
+    public void run(){
+    	
+    	String elemento;
+    	String recebe = null;
+    	
+    	try {
+		
+    		for (int i = 0; i < this.index; i++) 
+				this.jogador.get(i).envie("jogo começara em 10 segundos");
+    		Thread.sleep(10*1000);
+    			
+    		while(true){  			
+    			
+    			
+    			if (numerosSorteados.size() == 76){
+    				
+    				for (int i = 0; i < index; i++) 
+    					this.jogador.get(i).envie("Todos numeros foram sorteados");
+    				
+    				Thread.sleep(5*1000);
+    				
+    				for (int i = 0; i < index; i++) {
+    					this.jogador.get(i).envie("Não houve ganhador, o jogo acabou");
+    				}
+    				for (int i = 0; i < index; i++) {
+						removeJogador(jogador.get(i));
+					}
+    				break;
+    			}
+    			
+    			elemento ="" + numeroSorteado();
+    	    	System.out.println(elemento);
+
+        		for (int i =0; i<this.index;i++)
+    				this.jogador.get(i).envie(elemento);
+        		
+        		for (int i = 0; i < index; i++) {
+        			if (jogador.get(i).pedido()){
+        				
+        				recebe = jogador.get(i).receba();
+        				informacaoCliente(recebe, i);   
+        				break;
+        			}
+        				
+				}
+        		
+        		if (index == 1){
+        			jogador.get(index -1).envie("Jogo será excluido por falta de jogador");
+        			removeJogador(jogador.get(index-1));
+        			break;
+        		}
+        		if (index == 0)
+        			break;
+        		
+        		Thread.sleep(6*1000);
+    		}
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}	
+    	
+    }
+
+	private void informacaoCliente(String recebe, int posicao) throws Exception {
+				
+		try {
+			
+			if (recebe.equals("bingo")){
+				for (int i = 0; i < index; i++) {
+					if (posicao != i){
+						jogador.get(i).envie("Você perdeu, ja ouve um ganhador");
+					}
+				}
+				for (int i = 0; i < index; i++) {
+					removeJogador(jogador.get(i));
+				}
+			}
+			if (recebe.equals("saindo")){
+				removeJogador(jogador.get(posicao));	
+			}
+			
+		
+			
+		} catch (Exception e) {
+			throw new Exception(e.getMessage());
+		}
+	
+	}
+}

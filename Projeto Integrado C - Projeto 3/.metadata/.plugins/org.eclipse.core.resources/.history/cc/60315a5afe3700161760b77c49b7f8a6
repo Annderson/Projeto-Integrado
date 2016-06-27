@@ -1,0 +1,117 @@
+package Programa;
+
+import java.io.PrintStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import org.bdo.Valor;
+import org.jogador.Jogador;
+import org.persistencia.Valores;
+import org.servidor.Jogo;
+
+public class Main{
+	
+	protected static  Jogador jog;
+	protected static int idCartela = 0;
+	protected static Timer time = new Timer();
+	protected static TimerTask task1;
+	protected static Jogo jogo;
+	protected static int vf = 0;
+	
+	public static void main(String[] args) throws Exception {
+		
+		int temp = 10000;
+	
+	
+		task1 = new TimerTask() {	
+			@Override
+			public void run() {
+				System.out.println("tempo");
+				try {
+					
+					if (idCartela == 1){	
+						System.out.println("ENVIOU");
+						jog.envie("Jogo será excluido por falta de jogador");
+						jogo.removeJogador(jog);
+					}
+					else{
+						if (vf == 1){
+							jogo.start();
+							jogo = new Jogo();
+						}
+					}
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+					
+				
+			}
+		};
+		
+		vf = 1;
+		jogo = new Jogo();
+		
+		try {
+					
+			ServerSocket server = new ServerSocket(10000);
+			time.scheduleAtFixedRate(task1, 0, temp);
+			
+			while(true){
+				
+				Socket socket = server.accept();
+				idCartela ++;
+				jog= new Jogador(socket);
+				jogo.addJogador(jog);
+				enviecartela(idCartela);
+				
+				//jogo.start();
+				//jogo.addJogador(jog);
+				if (idCartela >= 2){
+					//time.cancel();
+					jogo.start();
+					jogo = new Jogo();
+					//time.scheduleAtFixedRate(task1, 0, temp);
+					idCartela=0;
+				}
+				
+			}	
+				
+		} catch (Exception e) {
+			System.out.println("Erro de conexão");
+		}
+		
+
+	}
+
+	private static void enviecartela(int id) throws Exception {
+		
+		try {
+			Valor vl;
+			Valores vls = new Valores();
+			
+			for (int i = 0; i < 5; i++) {
+				
+				for (int j = 0; j < 5; j++) {	
+					
+					if ((i == 2) && (j == 2)){
+						jog.envie("@");
+					}
+					else{
+						vl = vls.consulta(i, j, id);
+						jog.envie(""+vl.getValor());
+					}
+				}
+				
+			}
+			
+		} catch (Exception e) {
+			throw new Exception(e.getMessage());
+		}
+		
+	}  
+
+}
