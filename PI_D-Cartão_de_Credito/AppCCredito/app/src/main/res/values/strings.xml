@@ -4,4 +4,7 @@
     <string name="Senha">Senha:</string>
     <string name="Cadastrar">Cadastre-se</string>
     <string name="Entrar">Entrar</string>
+    <string name="Valor">Valor:</string>
+    <string name="Local">Local:</string>
+    <string name="Data">Data:</string>
 </resources>
