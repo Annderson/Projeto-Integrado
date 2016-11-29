@@ -9,22 +9,23 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-body{
-    background: #1b6d85;
-}
-h4{
-    color: #ec2925
-}
 a{
     font-size: 16px;
     font-style: italic;
     color: #ff0;
 }
 
-form{
-    padding:50px;
+body{
+    padding-top:80px;
+    padding-left: 90px;
+    padding-right: 90px;
     color: #000;
-    background: #fff;
+    background: #122b40;
     font-size: 16px;
     border: 2px;
+}
+
+form{
+    background: #fff;
+    padding: 80px;
 }

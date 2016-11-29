@@ -16,12 +16,13 @@ import java.util.Objects;
 public class Fatura {
     
     private Long idFatura;
-    private Long numero_conta;
-    private Double valor;
+    private String numero_cartao;
     private String local;
-    private Date data_compra;
-
-    public Long getIdFatura() {
+    private Double valor;
+    private Date data_acao;
+    private String horario;
+    
+    public Long getIdFatura() {    
         return idFatura;
     }
 
@@ -29,12 +30,12 @@ public class Fatura {
         this.idFatura = idFatura;
     }
 
-    public Long getNumero_conta() {
-        return numero_conta;
+    public String getNumero_cartao() {
+        return numero_cartao;
     }
 
-    public void setNumero_conta(Long numero_conta) {
-        this.numero_conta = numero_conta;
+    public void setNumero_cartao(String numero_cartao) {
+        this.numero_cartao = numero_cartao;
     }
 
     public Double getValor() {
@@ -53,12 +54,20 @@ public class Fatura {
         this.local = local;
     }
 
-    public Date getData_compra() {
-        return data_compra;
+    public Date getData_acao() {
+        return data_acao;
     }
 
-    public void setData_compra(Date data_compra) {
-        this.data_compra = data_compra;
+    public void setData_acao(Date data_acao) {
+        this.data_acao = data_acao;
+    }
+    
+     public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
     }
 
     @Override
@@ -80,12 +89,10 @@ public class Fatura {
         if (!Objects.equals(this.idFatura, other.idFatura)) {
             return false;
         }
-        if (!Objects.equals(this.numero_conta, other.numero_conta)) {
+        if (!Objects.equals(this.numero_cartao, other.numero_cartao)) {
             return false;
         }
         return true;
-    }
-    
-    
+    }  
     
 }

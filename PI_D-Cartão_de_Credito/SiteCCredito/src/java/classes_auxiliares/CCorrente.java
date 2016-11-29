@@ -15,10 +15,9 @@ import java.util.Objects;
 public class CCorrente {
     
     private Long idConta;
-    private Long idCliente;
     private String numero_conta;
+    private String cpfCliente;
     private String codigo;
-    private String numero_cartao;
     private Double total;
 
     public Long getIdConta() {
@@ -29,13 +28,13 @@ public class CCorrente {
         this.idConta = idConta;
     }
 
-    public Long getIdCliente() {
-        return idCliente;
+    public String getCpfCliente() {
+        return cpfCliente;
     }
 
-    public void setIdCliente(Long idCliente) {
-        this.idCliente = idCliente;
-    }    
+    public void setCpfCliente(String cpfCliente) {
+        this.cpfCliente = cpfCliente;
+    }  
 
     public String getNumero_conta() {
         return numero_conta;
@@ -51,14 +50,6 @@ public class CCorrente {
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
-    }
-
-    public String getNumero_cartao() {
-        return numero_cartao;
-    }
-
-    public void setNumero_cartao(String numero_cartao) {
-        this.numero_cartao = numero_cartao;
     }
 
     public Double getTotal() {

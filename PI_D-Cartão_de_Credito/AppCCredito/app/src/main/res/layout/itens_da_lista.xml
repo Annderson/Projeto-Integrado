@@ -4,34 +4,43 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
+    android:padding="4dp"
     >
 
     <android.support.v7.widget.CardView
+        android:id="@+id/cvItens"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="5dp"
         app:cardElevation="10dp"
         >
-        <TextView
-            android:text="@string/Valor"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            />
 
         <TextView
+            android:id="@+id/tvLocal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_gravity="left"
+            style="@style/LayoutItensList"
             android:text="@string/Local"/>
 
         <TextView
+            android:id="@+id/tvValor"
+            android:text="@string/Valor"
             android:layout_width="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_height="wrap_content"
-            android:text="@string/Data"
-            android:layout_marginLeft="200dp"
+            style="@style/LayoutItensList"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="left"            />
+
+        <ImageButton
+            android:id="@+id/btnInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_info"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/cardview_light_background"
+            android:layout_gravity="right"
             />
 
     </android.support.v7.widget.CardView>

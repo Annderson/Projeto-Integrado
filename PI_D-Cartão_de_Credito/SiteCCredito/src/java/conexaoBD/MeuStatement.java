@@ -1,7 +1,5 @@
-package conexao_bd;
+package conexaoBD;
 
-
-import conexao_bd.MeuResultSet;
 import java.util.ArrayList;
 import java.sql.Connection;
 import java.sql.DriverManager;

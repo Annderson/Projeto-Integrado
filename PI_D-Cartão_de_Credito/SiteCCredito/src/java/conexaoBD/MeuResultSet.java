@@ -1,4 +1,4 @@
-package conexao_bd;
+package conexaoBD;
 
 
 import java.sql.Array;

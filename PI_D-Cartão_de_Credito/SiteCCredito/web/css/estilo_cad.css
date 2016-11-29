@@ -10,19 +10,20 @@ html {
     -ms-text-size-adjust: 100%;
 }
 body{
-    background: #1b6d85;
+    background: #122b40;
+    margin: 40px;
 }
 h4{
     color: #ec2925
 }
 a{
-    font-size: 16px;
+    font-size: 20px;
     font-style: italic;
     color: #ff0;
 }
 
 form{
-    padding:50px;
+    padding:30px;
     color: #000;
     background: #fff;
     font-size: 16px;

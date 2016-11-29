@@ -5,7 +5,7 @@
  */
 package classes_auxiliares;
 
-import java.util.Date;
+import java.sql.Date;
 import java.util.Objects;
 
 /**
@@ -18,9 +18,13 @@ public class Cliente {
     private Long idCliente;
     private String nome;
     private String cpf;
-    private Date nascimento;
+    private String rg;
+    private String nascimento;
+    private String endereco;
+    private String cidade;
     private String email;
     private String telefone;
+    private String senha;
 
     public Long getIdCliente() {
         return idCliente;
@@ -46,14 +50,38 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public Date getNascimento() {
+    public String getRg() {
+        return rg;
+    }
+
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public String getNascimento() {
         return nascimento;
     }
 
-    public void setNascimento(Date nascimento) {
+    public void setNascimento(String nascimento) {
         this.nascimento = nascimento;
     }
 
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+    
     public String getEmail() {
         return email;
     }
@@ -68,6 +96,14 @@ public class Cliente {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     @Override
@@ -94,8 +130,6 @@ public class Cliente {
             return false;
         }
         return true;
-    }
-    
-    
+    } 
     
 }

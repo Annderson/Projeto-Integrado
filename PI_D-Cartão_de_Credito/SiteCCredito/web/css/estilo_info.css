@@ -9,22 +9,28 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
-body{
-    background: #1b6d85;
+.campos{
+    width: 600px;
 }
-h4{
-    color: #ec2925
+.posi{
+    margin-left: 400px;
+    margin-right: 10px;
+}
+h2{
+    color: #000;
+}
+body {
+    margin: 2px;
+    background: #edeeee;
 }
 a{
     font-size: 16px;
     font-style: italic;
     color: #ff0;
 }
-
 form{
-    padding:50px;
+    padding:30px;
     color: #000;
     background: #fff;
-    font-size: 16px;
-    border: 2px;
+    font-size: 18px;
 }
