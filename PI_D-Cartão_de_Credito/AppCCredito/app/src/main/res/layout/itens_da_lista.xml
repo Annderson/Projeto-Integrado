@@ -20,12 +20,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            style="@style/LayoutItensList"
-            android:text="@string/Local"/>
+            style="@style/LayoutItensList" />
 
         <TextView
             android:id="@+id/tvValor"
-            android:text="@string/Valor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/LayoutItensList"

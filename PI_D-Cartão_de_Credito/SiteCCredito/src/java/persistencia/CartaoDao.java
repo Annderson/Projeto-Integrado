@@ -5,7 +5,6 @@
  */
 package persistencia;
 
-import classes_auxiliares.CCorrente;
 import classes_auxiliares.Cartao;
 import conexaoBD.MeuPreparedStatement;
 import conexaoBD.MeuResultSet;
@@ -60,12 +59,12 @@ public class CartaoDao {
         }
         return contas;
     }
-    public List<String> cartoes (String id) throws SQLException, ClassNotFoundException{
+    public List<Cartao> cartoes (String id) throws SQLException, ClassNotFoundException{
         
-        List<String> cartao = null;
+        List<Cartao> cartao = null;
         pr = new MeuPreparedStatement(DRV, DB_URL, USER, PASSWOERD);
 
-        String sql = "select numero_cartao from Cartao where numero_conta=?";
+        String sql = "select numero_conta,numero_cartao,estado from Cartao where numero_conta=?";
         try {
             pr.prepareStatement(sql);
             pr.setString(1, id);
@@ -73,16 +72,21 @@ public class CartaoDao {
             
             Cartao ct;
             String st;
+            cartao = new ArrayList<>();
             while(rs.next()){
                 ct = new Cartao();
                 
+                ct.setNumero_conta(rs.getString("numero_conta"));
                 ct.setNumero_cartao(rs.getString("numero_cartao"));
-                if ("a".equals(rs.getString("estado")))
+                st = rs.getString("estado");
+                if ("a".equals(st)){
                     ct.setEstado("ativo");
-                else
+                }
+                else{
                     ct.setEstado("bloqueado");
+                }
 
-                cartao.add("numero_cartao");
+                cartao.add(ct);
             }
 
             pr.commit();
@@ -130,6 +134,30 @@ public class CartaoDao {
             pr.prepareStatement(delete);
 
             pr.setLong(1,c.getIdCartao());
+
+            pr.executeUpdate();
+            pr.commit();
+            pr.close();
+
+        }catch (SQLException e){
+            pr.close();
+            e.printStackTrace();
+        }
+
+    }
+    
+    public void estadoCartao (Cartao c) throws SQLException, ClassNotFoundException{
+
+        pr = new MeuPreparedStatement(DRV,DB_URL,USER,PASSWOERD);
+
+        try {
+            
+            String editar = "update Cartao set estado=?"
+                    + " where numero_cartao=?";
+            pr.prepareStatement(editar);
+
+            pr.setString(1, c.getEstado());
+            pr.setString(2, c.getNumero_cartao());
 
             pr.executeUpdate();
             pr.commit();

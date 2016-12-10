@@ -15,12 +15,15 @@ html {
 .posi{
     margin-left: 400px;
     margin-right: 10px;
+    padding: 5px
+}
+.posiBs{
+    float: right
 }
 h2{
     color: #000;
 }
 body {
-    margin: 2px;
     background: #edeeee;
 }
 a{
@@ -29,7 +32,8 @@ a{
     color: #ff0;
 }
 form{
-    padding:30px;
+    margin: 20px;
+    padding:60px;
     color: #000;
     background: #fff;
     font-size: 18px;

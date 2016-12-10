@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.anderson.appccredito.Lancamento;
+import com.example.anderson.appccredito.InfoFatura;
 import com.example.anderson.appccredito.R;
 import com.example.anderson.appccredito.cliente.Fatura;
 
@@ -45,7 +45,7 @@ public class MyAdapterList extends RecyclerView.Adapter<MyAdapterList.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
-        Format formato = NumberFormat.getCurrencyInstance(Locale.PRC);
+        Format formato = NumberFormat.getCurrencyInstance(Locale.forLanguageTag("pt-BR"));
         holder.fatura = faturas.get(position);
 
         holder.local.setText("Local: " + holder.fatura.getLocal());
@@ -73,7 +73,6 @@ public class MyAdapterList extends RecyclerView.Adapter<MyAdapterList.MyViewHold
             local = (TextView)itemView.findViewById(R.id.tvLocal);
             valor = (TextView)itemView.findViewById(R.id.tvValor);
             ibnDetalhe = (ImageButton)itemView.findViewById(R.id.btnInfo);
-
             ibnDetalhe.setOnClickListener(this);
         }
 
@@ -91,7 +90,7 @@ public class MyAdapterList extends RecyclerView.Adapter<MyAdapterList.MyViewHold
             Bundle b = new Bundle();
             b.putSerializable("fatura",fatura);
 
-            Intent iAbrirInfo = new Intent(context, Lancamento.class);
+            Intent iAbrirInfo = new Intent(context, InfoFatura.class);
             iAbrirInfo.putExtras(b);
             context.startActivity(iAbrirInfo);
         }

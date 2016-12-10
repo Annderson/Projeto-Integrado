@@ -89,10 +89,9 @@ public class LoginServlet extends HttpServlet {
         
         try {
             if (op.cadastrado(ro, senha)){
-                response.sendRedirect("listaClientes.jsp");
+                response.sendRedirect("ListaClienteServlet");
             }
             else{
-                boolean vf = true;
                 request.setAttribute("msn","R.O ou senha invalidos");       
                 getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
             }

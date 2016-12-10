@@ -5,7 +5,6 @@
  */
 package persistencia;
 
-import classes_auxiliares.Cartao;
 import classes_auxiliares.Fatura;
 import conexaoBD.MeuPreparedStatement;
 import conexaoBD.MeuResultSet;
@@ -29,16 +28,17 @@ public class FaturaDao {
     private MeuPreparedStatement pr;
     private MeuResultSet rs;
 
-    public List<Fatura> getFaturas() throws ClassNotFoundException, SQLException{
+    public List<Fatura> getFaturas(String n) throws ClassNotFoundException, SQLException{
 
         List<Fatura> faturas = null;
         pr = new MeuPreparedStatement(DRV, DB_URL, USER, PASSWOERD);
 
-        String queryClientes = "select * from Fatura where numero_cartao=?";
+        String query = "select * from Fatura where numero_cartao=?";
         
         try {
-            
-            rs = (MeuResultSet) pr.executeQuery(queryClientes);
+            pr.prepareStatement(query);
+            pr.setString(1, n);
+            rs = (MeuResultSet) pr.executeQuery();
             faturas = new ArrayList<>();
             Fatura f;
                 
@@ -49,7 +49,7 @@ public class FaturaDao {
                 f.setNumero_cartao(rs.getString("numero_cartao"));
                 f.setLocal(rs.getString("local"));
                 f.setValor(rs.getDouble("valor"));
-                f.setData_acao(rs.getDate("data_acao"));
+                f.setData_acao(rs.getString("data_acao"));
                 f.setHorario(rs.getString("horario"));
                     
                 faturas.add(f);
@@ -68,11 +68,11 @@ public class FaturaDao {
         Fatura fatura = null;
         pr = new MeuPreparedStatement(DRV, DB_URL, USER, PASSWOERD);
 
-        String queryClientes = "select * from Fatura where idFatura=?";
+        String query = "select * from Fatura where idFatura=?";
         try {
-            
+            pr.prepareStatement(query);
             pr.setLong(1, id);
-            rs = (MeuResultSet) pr.executeQuery(queryClientes);
+            rs = (MeuResultSet) pr.executeQuery();
             fatura = new Fatura();
             
             if(rs.next()){
@@ -81,7 +81,7 @@ public class FaturaDao {
                 fatura.setNumero_cartao(rs.getString("numero_cartao"));
                 fatura.setLocal(rs.getString("local"));
                 fatura.setValor(rs.getDouble("valor"));
-                fatura.setData_acao(rs.getDate("data_acao"));
+                fatura.setData_acao(rs.getString("data_acao"));
                 fatura.setHorario(rs.getString("horario"));
                     
             }
@@ -108,7 +108,7 @@ public class FaturaDao {
             pr.setString(1, f.getNumero_cartao());
             pr.setString(2, f.getLocal());
             pr.setDouble(3, f.getValor());
-            pr.setDate(4, (Date) f.getData_acao());
+            pr.setString(4, f.getData_acao());
             pr.setString(5, f.getHorario());
 
             pr.executeUpdate();
@@ -157,7 +157,7 @@ public class FaturaDao {
             pr.setString(1, f.getNumero_cartao());
             pr.setString(2, f.getLocal());
             pr.setDouble(3, f.getValor());
-            pr.setDate(4, (Date) f.getData_acao());
+            pr.setString(4, f.getData_acao());
             pr.setString(5, f.getHorario());
 
 

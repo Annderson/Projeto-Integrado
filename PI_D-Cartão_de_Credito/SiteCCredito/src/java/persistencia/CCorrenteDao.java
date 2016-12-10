@@ -9,7 +9,6 @@ import classes_auxiliares.CCorrente;
 import classes_auxiliares.Fatura;
 import conexaoBD.MeuPreparedStatement;
 import conexaoBD.MeuResultSet;
-import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -92,7 +91,7 @@ public class CCorrenteDao {
         return conta;
     }
     
-    public List<String> contas (String n) throws SQLException, ClassNotFoundException{
+    public List<String> contas (String cpf) throws SQLException, ClassNotFoundException{
         
         pr = new MeuPreparedStatement(DRV, DB_URL, USER, PASSWOERD);
 
@@ -102,11 +101,8 @@ public class CCorrenteDao {
 
         try {
             pr.prepareStatement(ft);
-            pr.setString(1,n);
+            pr.setString(1,cpf);
             rs = (MeuResultSet) pr.executeQuery();
-            
-            Fatura fatura = null;
-            fatura = new Fatura();
             
             while(rs.next()){
                 String numero;

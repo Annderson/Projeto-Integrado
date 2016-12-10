@@ -15,6 +15,14 @@
         <item name="android:textColor">@color/preto</item>
     </style>
 
+    <style name="LayoutInfo">
+        <item name="android:textSize">@dimen/login_info_fontes</item>
+        <item name="android:layout_marginLeft">@dimen/margem_lados</item>
+        <item name="android:layout_marginRight">@dimen/margem_lados</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textColor">@color/preto</item>
+    </style>
+
     <style name="LayoutItensList">
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginLeft">10dp</item>

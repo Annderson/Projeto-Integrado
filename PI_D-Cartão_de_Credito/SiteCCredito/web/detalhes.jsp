@@ -26,7 +26,7 @@
                 <h2> Informações do Cliente </h2>
             </div>
             
-            <form  class="" action="listaClientes.jsp">
+            <form  class="form-control-static" method="post" action="InfoClienteServlet" >
                 
                 <h5>
                 </h5>
@@ -66,25 +66,30 @@
                 
                 <div class="form-group">
                     <c:forEach var="lista" items="${contas}">
-                        Conta: <label name="conta">${lista}</label>
                         
+                        Conta: <label name="conta">${lista}</label><br>
+                        
+                        <c:forEach var="cartao"  items="${cartoes}">
+                            
+                            <c:if test="${lista == cartao.numero_conta}">
+                                <p class="posi form-horizontal">
+                                    Cartão: <label name="cartao">${cartao.numero_cartao}  :</label>
+                                    <input type="text" name="estado" value="${cartao.estado}"/>
+                                </p>
+                            </c:if>
+                                
+                        </c:forEach>
                         <ul>
                             <hr style="height:1px; border:none; color:#000;
                                    background-color:#000;"/>
                         </ul> 
-                    </c:forEach>
+                    </c:forEach>          
                         
-                        <c:forEach var="lista2" items="${cartoes}">
-                        <p class="posi form-horizontal">
-                            Cartão:<label name="cartao">${lista2.numero_cartao}</label>
-                            <input type="radio" class="radio-inline" name="estatos" value="ativo" /> Ativo
-                            <input type="radio" class="radio-inline" name="estatos" value="bloqueado" /> Bloqueado
-                        </p>
-                        </c:forEach>
                 </div>
                 
                 <div class="form-group ">
-                    <input type="submit" name="btnVoltar" value="Voltar" class="btn btn-lg btn-success"/>
+                    <input type="submit" name="btnSalvar" id="V" value="Voltar" class="btn btn-lg btn-success"/>
+                    <input type="submit" name="btnSalvar" id="S" value="Salvar" class="btn btn-lg btn-success posiBs"/>
                 </div>
                 
             </form>

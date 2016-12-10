@@ -6,7 +6,6 @@
 package persistencia;
 
 import classes_auxiliares.Cliente;
-import classes_auxiliares.ObterJson;
 import conexaoBD.MeuPreparedStatement;
 import conexaoBD.MeuResultSet;
 import java.sql.SQLException;
@@ -26,13 +25,38 @@ public class ClienteDao {
 
     private MeuPreparedStatement pr;
     private MeuResultSet rs;
+    
+    public boolean cadastrado (String cpf) throws Exception{
+		
+	boolean vf = false;
+	try {
+            
+            pr = new MeuPreparedStatement(DRV, DB_URL, USER, PASSWOERD);
+			
+	    String query = "select * from Cliente where cpf=?";
+	    pr.prepareStatement(query);
+	    pr.setString(1, cpf);
+	    MeuResultSet rs = (MeuResultSet)pr.executeQuery();
+	    vf = rs.first();
+            
+            pr.commit();
+            pr.close();
+	} catch (SQLException e) {
+	    throw new Exception("Erro ao verificar o banco");
+	}
+		
+	return vf;
+    }
 
     public List<Cliente> getClientes() throws ClassNotFoundException, SQLException{
 
-        List<Cliente> clientes = null;
         pr = new MeuPreparedStatement(DRV, DB_URL, USER, PASSWOERD);
+        
+        List<Cliente> clientes = null;
+        String queryClientes = null;
+        
+        queryClientes = "select * from Cliente";
 
-        String queryClientes = "select * from Cliente";
         try {
             
             rs = (MeuResultSet) pr.executeQuery(queryClientes);
@@ -65,6 +89,46 @@ public class ClienteDao {
         return clientes;
     }
     
+    public List<Cliente> consultaCpf (String cpf) throws SQLException, ClassNotFoundException{
+        
+        List<Cliente> cliente = null;
+        Cliente c = null;
+        pr = new MeuPreparedStatement(DRV, DB_URL, USER, PASSWOERD);
+
+        String query = "select * from Cliente where cpf=?";
+        try {
+            
+            pr.prepareStatement(query);
+            pr.setString(1,cpf);
+            rs = (MeuResultSet) pr.executeQuery();
+            
+            cliente = new ArrayList<>();
+                
+            if(rs.next()){
+                c = new Cliente();
+                    
+                c.setIdCliente(rs.getLong("idCliente"));
+                c.setNome(rs.getString("nome"));
+                c.setCpf(rs.getString("cpf"));
+                c.setRg(rs.getString("rg"));
+                c.setNascimento(rs.getString("nascimento"));
+                c.setEndereco(rs.getString("endereco"));
+                c.setCidade(rs.getString("cidade"));
+                c.setEmail(rs.getString("email"));
+                c.setTelefone(rs.getString("telefone"));
+                c.setSenha(rs.getString("senha"));
+                
+                cliente.add(c);
+            }
+
+            pr.commit();
+            pr.close();
+        } catch (SQLException e) {
+            pr.close();
+        }
+        return cliente;
+    }
+    
     public Cliente consultaCliente (Long id) throws SQLException, ClassNotFoundException{
         
         Cliente c = null;
@@ -75,7 +139,7 @@ public class ClienteDao {
             pr.prepareStatement(queryCliente);
             pr.setLong(1,id);
             rs = (MeuResultSet) pr.executeQuery();
-                
+            
             if(rs.next()){
                 c = new Cliente();
                     

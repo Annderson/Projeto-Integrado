@@ -19,7 +19,7 @@ public class Fatura {
     private String numero_cartao;
     private String local;
     private Double valor;
-    private Date data_acao;
+    private String data_acao;
     private String horario;
     
     public Long getIdFatura() {    
@@ -54,11 +54,11 @@ public class Fatura {
         this.local = local;
     }
 
-    public Date getData_acao() {
+    public String getData_acao() {
         return data_acao;
     }
 
-    public void setData_acao(Date data_acao) {
+    public void setData_acao(String data_acao) {
         this.data_acao = data_acao;
     }
     

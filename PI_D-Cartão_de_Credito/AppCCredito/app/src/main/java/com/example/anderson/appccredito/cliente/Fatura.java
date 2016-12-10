@@ -1,7 +1,6 @@
 package com.example.anderson.appccredito.cliente;
 
 import java.io.Serializable;
-import java.util.Date;
 import java.util.Objects;
 
 /**
@@ -10,19 +9,11 @@ import java.util.Objects;
 public class Fatura implements Serializable{
 
     private Long idFatura;
-    private Date data_compra;
-    private Date horario;
-    private Double valor;
-    private String conta;
+    private String numero_cartao;
     private String local;
-
-    public String getLocal() {
-        return local;
-    }
-
-    public void setLocal(String local) {
-        this.local = local;
-    }
+    private Double valor;
+    private String data_acao;
+    private String horario;
 
     public Long getIdFatura() {
         return idFatura;
@@ -32,20 +23,20 @@ public class Fatura implements Serializable{
         this.idFatura = idFatura;
     }
 
-    public Date getData_compra() {
-        return data_compra;
+    public String getNumero_cartao() {
+        return numero_cartao;
     }
 
-    public void setData_compra(Date data_compra) {
-        this.data_compra = data_compra;
+    public void setNumero_cartao(String numero_cartao) {
+        this.numero_cartao = numero_cartao;
     }
 
-    public Date getHorario() {
-        return horario;
+    public String getLocal() {
+        return local;
     }
 
-    public void setHorario(Date horario) {
-        this.horario = horario;
+    public void setLocal(String local) {
+        this.local = local;
     }
 
     public Double getValor() {
@@ -56,12 +47,20 @@ public class Fatura implements Serializable{
         this.valor = valor;
     }
 
-    public String getConta() {
-        return conta;
+    public String getData_acao() {
+        return data_acao;
     }
 
-    public void setConta(String conta) {
-        this.conta = conta;
+    public void setData_acao(String data_acao) {
+        this.data_acao = data_acao;
+    }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
     }
 
     @Override
@@ -75,7 +74,7 @@ public class Fatura implements Serializable{
 
         if (!Objects.equals(idFatura,fatura.idFatura))
             return false;
-        if (!Objects.equals(conta,fatura.conta))
+        if (!Objects.equals(this.numero_cartao,fatura.numero_cartao))
             return false;
 
         return true;

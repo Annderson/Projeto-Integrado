@@ -15,12 +15,21 @@ public class Validador {
         this.context = context;
     }
 
-    public boolean validetion(EditText et){
+    public boolean validetion(EditText etC, EditText etS){
 
-        String valorRecebido = et.getText().toString();
+        String vlCpf = etC.getText().toString();
+        String vlS = etS.getText().toString();
 
-        if (valorRecebido.equals("")){
+        if (vlCpf.equals("") && vlS.equals("")){
             Toast.makeText(context, "Preencha todos os campo",Toast.LENGTH_LONG).show();
+            return false;
+        }
+        else if (vlCpf.equals("")){
+            Toast.makeText(context, "Campo CPF vazio",Toast.LENGTH_LONG).show();
+            return false;
+        }
+        else if (vlS.equals("")){
+            Toast.makeText(context, "Campo Senha vazio",Toast.LENGTH_LONG).show();
             return false;
         }
 

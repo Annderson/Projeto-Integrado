@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".InfoFatura">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@drawable/back_info">
+
+        <TextView
+            android:id="@+id/tviIdFatura"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+
+       <LinearLayout
+           android:id="@+id/llbodyInfoFatura"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="#fff"
+           >
+
+           <TextView
+               android:id="@+id/tviNumeroCartao"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/LayoutInfo"
+               />
+
+           <TextView
+               android:id="@+id/tviLocal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/LayoutInfo"
+               />
+
+           <TextView
+               android:id="@+id/tviValor"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/LayoutInfo"
+               />
+           <TextView
+               android:id="@+id/tviData"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/LayoutInfo"
+               />
+           <TextView
+               android:id="@+id/tviHorario"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/LayoutInfo"
+               />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

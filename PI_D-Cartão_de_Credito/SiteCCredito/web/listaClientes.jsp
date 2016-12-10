@@ -3,9 +3,8 @@
     Created on : 04/11/2016, 16:32:31
     Author     : anderson
 --%>
-
+<
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="lista" class="servlets.ListaClienteServlet"/>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -14,55 +13,43 @@
         <title>Lista de Clientes</title>
         <script type="text/javascript" src="js/jquery.js"></script>
         
-        <link rel="stylesheet" href="css/layout.listaClientes.css" />
+        <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.dataTables.css">
+        <link rel="stylesheet" href="css/layout.listaClientes.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap.css"> 
         
         <script >
             
-            function enviar(id){
-                $.ajax({
-                    url: 'ListaClienteServlet', 
-                    type: 'GET',
-                    data: {id: id},
-                    success: function (r) {
-                        window.location.href="detalhes.jsp?numero=" + r;
-                         console.log(r);
-                         alert(r);
-                    },
-                    error: function (e) {
-                        console.log("ERRO:");
-                        console.log(e);
-                    }
-                });
-            }
-            
             function enviarr(r){
-                window.location.href="ListaClienteServlet?id=" + r;
+                window.location.href="InfoClienteServlet?id=" + r;
             }
             
         </script>
     </head>
     <body>
         <div class="container">
-            <p class="">
-                <p class="fonteC espA1 input-lg">
-                    Ordenar por: <select>
-                        <option> Nome </option>
-                        <option> Cidade </option>
-                        <option> Telefone </option>
-                    </select>
+            <form action="ListaClienteServlet" method="get">
                 
+                    Ordenar por: <select class="fonteC espA1 input-lg" id="ordenarLi" name="ordenarL">
+                        <option value="nomeL"> Nome </option>
+                        <option value="cidadeL"> Cidade </option>
+                        <option value="telefoneL"> Telefone </option>
+                    </select>
                     <button class="btn-primary">Ordenar</button>
-                </p>
+                
+            </form>
+            
+            <form action="ListaClienteServlet" method="post">
                 <p class="espA2 fonteC input-lg">
-                    CPF: <input  type="text" name="buscaCpf"/>  
+                    CPF: <input  type="text" value="${cpf}" id="buscaCpf" name="buscaCpf"/>  
                     <button class="btn-primary"> Buscar </button>
                 </p>
-            </p>
+            </form>
+                    
             <div class="row">
                 <div class="col-xs-12">
-                    <table class="table table-hover" >
+                    <table class="table table-hover" id="tbClientes" >
                         <thead border="1">
                             <tr>
                                 <th> NUmero </th>
@@ -74,7 +61,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <c:forEach var="cliente" items="${lista.clientesServlet}">  
+                            <c:forEach var="cliente" items="${clientes}">  
                             <tr>
                                 <td> ${cliente.idCliente} </td>
                                 <td> ${cliente.nome} </td>

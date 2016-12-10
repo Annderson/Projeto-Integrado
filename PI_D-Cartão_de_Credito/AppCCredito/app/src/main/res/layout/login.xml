@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             style="@style/LoginFontes"
-            android:text="@string/Login" />
+            android:text="@string/cpf" />
 
         <EditText
             android:id="@+id/etCpf"
@@ -37,17 +37,18 @@
             />
 
         <TextView
-            android:id="@+id/tvConta"
+            android:id="@+id/tvSenha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="140dp"
             style="@style/LoginFontes"
-            android:text="@string/Conta" />
+            android:text="@string/Senha" />
 
         <EditText
-            android:id="@+id/etConta"
+            android:id="@+id/etSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             style="@style/LoginFontes"
             android:layout_marginTop="160dp"
             />

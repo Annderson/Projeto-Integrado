@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListFatura" />
-        <activity android:name=".Lancamento"></activity>
+        <activity android:name=".InfoFatura"></activity>
     </application>
 
 </manifest>

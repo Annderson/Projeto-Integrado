@@ -5,14 +5,16 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.example.anderson.appccredito.auxiliares.MyAdapterList;
+import com.example.anderson.appccredito.cliente.Cliente;
 import com.example.anderson.appccredito.cliente.Fatura;
-import com.example.anderson.appccredito.conexaoHTTP.PegandoJson;
+import com.example.anderson.appccredito.conexaoHTTP.ConexaoHttp;
 import com.example.anderson.appccredito.interfaces.RespostaWeb;
 
 import java.util.ArrayList;
@@ -29,11 +31,15 @@ public class ListFatura extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_fatura);
 
-       // povoar();
-        obterJson();
+        Cliente cliente = (Cliente) getIntent().getSerializableExtra("cliente");
+
+        faturas = new ArrayList<>();
+
+        obterIds();
+        pegarDadosWeb(cliente);
 
         rvLista.setHasFixedSize(true);
-        GridLayoutManager grid = new GridLayoutManager(this, 1);
+        LinearLayoutManager grid = new GridLayoutManager(this, 1);
         rvLista.setLayoutManager(grid);
         adapter = new MyAdapterList(this,faturas);
         adapter.notifyDataSetChanged();
@@ -41,24 +47,20 @@ public class ListFatura extends AppCompatActivity {
 
     }
 
+    private void pegarDadosWeb(Cliente cliente) {
 
-    private void povoar() {
+        ConexaoHttp cnx = (ConexaoHttp) new ConexaoHttp(cliente, new RespostaWeb() {
+            @Override
+            public void callBack(List<Fatura> response) {
+                faturas.clear();
+                faturas.addAll(response);
+                adapter.notifyDataSetChanged();
+            }
+        }).execute("http://192.168.15.2:8080/SiteCCredito/ObterJsonServlet");
 
-        faturas = new ArrayList<>();
-
-        Fatura f1 = new Fatura();
-        f1.setLocal("Pizzaria");
-        f1.setValor(500.00);
-
-        Fatura f2 = new Fatura();
-        f2.setLocal("Padaria");
-        f2.setValor(700.00);
-
-        faturas.add(f1);
-        faturas.add(f2);
     }
 
-    private void obterJson() {
+    private void obterIds() {
         rvLista = (RecyclerView)this.findViewById(R.id.rvListFatura);
     }
 
