@@ -83,7 +83,6 @@ public class ConexaoHttp extends AsyncTask <String,String,List<Fatura>> {
             Type type = new TypeToken<List<Fatura>>(){}.getType();
             faturas = gson.fromJson(dados.toString(),type);
 
-            Log.i("Objeto","Obejeto chegou: " + faturas.get(0).getLocal());
 
         }catch (MalformedURLException e) {
             e.printStackTrace();

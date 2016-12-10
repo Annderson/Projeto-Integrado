@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -36,14 +35,14 @@ public class ListFatura extends AppCompatActivity {
         faturas = new ArrayList<>();
 
         obterIds();
-        pegarDadosWeb(cliente);
 
         rvLista.setHasFixedSize(true);
-        LinearLayoutManager grid = new GridLayoutManager(this, 1);
+        LinearLayoutManager grid = new LinearLayoutManager(this);
         rvLista.setLayoutManager(grid);
         adapter = new MyAdapterList(this,faturas);
         adapter.notifyDataSetChanged();
         rvLista.setAdapter(adapter);
+        pegarDadosWeb(cliente);
 
     }
 
@@ -52,7 +51,7 @@ public class ListFatura extends AppCompatActivity {
         ConexaoHttp cnx = (ConexaoHttp) new ConexaoHttp(cliente, new RespostaWeb() {
             @Override
             public void callBack(List<Fatura> response) {
-                faturas.clear();
+                //faturas.clear();
                 faturas.addAll(response);
                 adapter.notifyDataSetChanged();
             }
